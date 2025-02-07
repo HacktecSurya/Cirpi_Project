@@ -34,7 +34,8 @@ body{
     display: flex;
     justify-content: space-evenly; /* Equal space between items */
     width: 100%; /* Ensure it spans the full container width */
-    background-color: #fcbc3d;
+    background-color: #6bcfff;
+    /* fa4207 */
     padding: 1%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -69,15 +70,43 @@ body{
 
 .cirpi-title{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 5em;
+    font-size: 64px ;
     font-weight:bold;
     color: #003257;
 }
+/* .cirpi-title span{
+    color: #ffd700;
+} */
 .hero-sub-title{
     font-size: 200%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #003257;
     line-height:100%;
+}
+.intro_container{
+    padding-top: 1%;
+    background-color: white;
+}
+.intro-head{
+
+}
+.intro-head h1{
+    font: size 40px;
+    color: #003257;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    text-align: center;
+    padding-top: 1%;
+
+}
+/* .intro-head span{
+    color: #ffd700;
+} */
+.intro-text{
+    padding: 3%;
+    font-size: 150%;
+    color: #003257;
+    text-align: justify;
 }
 
 /* 
@@ -99,19 +128,21 @@ body{
 
 .OPE-title{
    padding-top: 2%;
-    color: #dda11d;
-    font-weight: bold;
+   color: #003257;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     text-align: center;
-    /* border-radius: 20px; */
+}
+.OPE-title h1{
+    font-weight: bold;
+    font-size: 40px !important;
 }
 
 .OPE-title h1{
     font-size: 250%;
 }
-.OPE-tittle2{
-    color: #003257;
-}
+/* .OPE-tittle2{
+    color: #FF521B;
+} */
 .OPE{
     display: block;
     /* place-items: center;  */
@@ -136,12 +167,11 @@ body{
     text-align: justify;
 }
 .OPI-title{
-    background-color:#71A3BA;
-    padding: 0.5%;
-    width: 50%;
-    text-align: center;
-    color:#003257;
-    border-radius: 20px;
+    padding-top: 2%;
+    color: #003257;
+     font-family: Georgia, 'Times New Roman', Times, serif !important;
+     text-align: center;
+     padding: 2%;
 }
 .OPI{
     background-color:#ffffff;
@@ -150,35 +180,11 @@ body{
     padding-bottom: 1%;
     padding-top: 1%;
 }
-/* .card{
-        background-color: #003257;
-    color: #E4FEFF;
-    width: 22rem;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-
-} */
-
-.card_col{
-    /*  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+.OPI-title h1{
+    font-size:40px !important;
+    font-weight: bold;
 }
 
-/* .card-body{
-    background-color: #003257;
-    color: #E4FEFF;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-} */
-/* .card img{ */
-    /* border-top-left-radius: 15px;
-    border-top-right-radius: 15px; */
-/* }
-.card-title{
-    text-align: center;
-}
-.card-text{
-    text-align: justify;
-} */
 
 .cartd {
     background-color: #ffffff;
@@ -194,10 +200,10 @@ body{
 
 .card-body {
     padding: 5% !important;
-    background-color:#003257;
+    /* background-color; */
         border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    color:#ffffff !important;
+    color:#003257!important;
 
 }
 
@@ -227,42 +233,41 @@ body{
 }
 
 .OV{
+    background-color: #003257;
     display: block;
     place-items: center;
     position: relative;
     z-index: 1;
+    color: white;
 }
 
 .OVR-contain{
-    background-color: #A7F9FF;
-    border-bottom-right-radius: 200px;
-    border-top-right-radius: 200px;
-    margin-left: 10% !important;
-    position: absolute;
-    z-index: 2;
 
+
+}
+.OVR-contain h1{
+    font-size: 24px;
 }
 
 .our-vision{
-    background-color:#003257;
-    padding: 0.5%;
-    width: 40%;
+    padding: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+
+}
+.our-vision h1{
     text-align: center;
-    color: white;
-    border-radius: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
 
-
+.OVR-contain{
+    text-align: center;
 }
 
 .OV p{
-    color: #003257;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 7.5%;
-
-    font-size: 150%;
-    text-align: justify;
+    font-size: 20px;
+    padding: 1%;
+    text-align: center;
 }
 
 .OV img{
@@ -272,6 +277,8 @@ body{
 }
 
 .OM {
+    padding: 2%;
+    background-color: white;
     display: block;
     place-items: center;
     position: relative;
@@ -279,33 +286,30 @@ body{
 }
 
 .OVM-contain{
-    background-color: #003257;
+    /* background-color: #003257;
     border-top-left-radius: 200px;
     border-bottom-left-radius: 200px;
-    margin-left: 20% !important;
-    position: absolute;
-    z-index: 2;
+    margin-left: 20% !important; */
+}
+.OVM-contain h1{
+    text-align: center;
+    font-size:24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #003257;
+    padding: 1%;
 }
 
-.our-vission{
-    background-color:#71A3BA;
-    font-weight: bold;
-    padding: 0.5%;
-    width: 40%;
-    text-align: center;
-    color:#003257;
-    border-radius: 20px;
+.our-Mission h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold !important;  
+    color: #003257;
 }
 
 .OM p{
-    color: #71A3BA;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 7.5%;
-
-    font-size: 150%;
+    font-size: 20px;
     text-align: justify;
+    color: #003257;
 }
 
 .OM img{
