@@ -4,6 +4,9 @@ body{
     /* position:fixed;  */
 }
 
+.head{
+    color: #3e92cc;
+}
 
 .navbar{
     background-color: #003257;
@@ -104,30 +107,20 @@ body{
 } */
 .intro-text{
     padding: 3%;
-    font-size: 150%;
     color: #003257;
     text-align: justify;
+    margin-left: 10%;
 }
-
-/* 
-.hero p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.5;
-} */
-
-/* .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-} */
+.intro-text p{
+    font-size: 24px !important;
+}
 
 .OPE{
     background-color: #ffffff;
 }
 
 .OPE-title{
-   padding-top: 2%;
+   /* padding-top: 2%; */
    color: #003257;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     text-align: center;
@@ -160,25 +153,23 @@ body{
     
 }
 .OPE-section p{
-
     color: #003257;
     padding: 2%;
-    font-size: 150%;
+    font-size: 20px;
     text-align: justify;
+    margin-left: 10%;
 }
 .OPI-title{
-    padding-top: 2%;
     color: #003257;
      font-family: Georgia, 'Times New Roman', Times, serif !important;
      text-align: center;
      padding: 2%;
 }
 .OPI{
-    background-color:#ffffff;
+    background-color:#d8e5f0;
     display: block;
     place-items: center;
-    padding-bottom: 1%;
-    padding-top: 1%;
+    padding-bottom: 3%;
 }
 .OPI-title h1{
     font-size:40px !important;
@@ -215,6 +206,7 @@ body{
 
 .card-title {
     text-align: center;
+    padding-bottom: 3% !important;
 }
 
 .card-text {
@@ -246,7 +238,7 @@ body{
 
 }
 .OVR-contain h1{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .our-vision{
@@ -272,8 +264,6 @@ body{
 
 .OV img{
     width: 80%;
-    
-
 }
 
 .OM {
@@ -285,14 +275,13 @@ body{
     z-index: 1;
 }
 
-.OVM-contain{
-    /* background-color: #003257;
-    border-top-left-radius: 200px;
-    border-bottom-left-radius: 200px;
-    margin-left: 20% !important; */
+.our-mission-text{
+    color: #003257 ;
+    text-align: justify !important;
+    margin-left:10% ;
 }
 .OVM-contain h1{
-    text-align: center;
+    margin-left: 10%;
     font-size:24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
@@ -305,6 +294,9 @@ body{
     font-weight: bold !important;  
     color: #003257;
 }
+.mission-list{
+    margin-left: 10%;
+}
 
 .OM p{
     font-size: 20px;
@@ -316,9 +308,42 @@ body{
     width: 100%;
 }
 
+.OG{
+    background-color: white;
+    padding: 1%;
+}
+
+.OG-title{
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.OG-title h1{
+    font-weight: bold;
+}
+
+.OG-sub-title{
+    margin-right: 10%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.OG-colum{
+    padding: 1%;
+}
+
+.OG-text{
+    color: #003257;
+    margin-right: 10%;
+}
 .GI {
+    background-color: white;
     display: block;
     place-items: center;
+    margin-top: 20%;
 }
 
 .GI-contain{
@@ -344,36 +369,27 @@ body{
 }
 
 .get-involved{
-    background-color:#003257;
-    padding: 0.5%;
-    width: 40%;
+    color:#003257;
+    font-size:24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 1%;
+}
+.get-involved h1{
+    font-weight: bold;
+}
+
+.CTU{
+    background-color: white;
+    color: #003257;
+    padding: 2%;
     text-align: center;
-    color:white;
-    border-radius: 20px;
+}
+.contact-head{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 
-
-.carouselExample{
-    background: linear-gradient(45deg, #2e7d32, #66bb6a);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
-f
-.carousel {
-    width: 80%;
-    max-width: 900px;
-}
-
-.carousel-item {
-    text-align: center;
-    perspective: 1000px;
-}
 
 .foot_logo{
     padding-top: 20%;
@@ -392,7 +408,6 @@ f
 
 .sub-footer{
     margin-top: 2%;
-    /* padding: 3%; */
     padding-left: 1%;
     padding-right: 1%;
     padding-top:2% ;
@@ -423,10 +438,12 @@ f
     margin-bottom: 1%;
     position: absolute;  
     z-index: 3;
+    
 }   
 .spacer{
     padding-top: 2.5%;
     padding-bottom: 4.5%;
+    background-color: #ffffff;
 }
 
 
@@ -440,6 +457,9 @@ f
     text-align: center;
     margin-top: 15%;
     color: #71A3BA;
+}
+.footer{
+    background-color: #ffffff;
 }
 
 
