@@ -4,9 +4,14 @@ body{
     /* position:fixed;  */
 }
 
-.head{
-    color: #3e92cc;
-}
+html {
+    scrollbar-width: none;
+  }
+
+
+/* .head{
+    color: #5e7494;
+} */
 
 .navbar{
     background-color: #003257;
@@ -37,7 +42,7 @@ body{
     display: flex;
     justify-content: space-evenly; /* Equal space between items */
     width: 100%; /* Ensure it spans the full container width */
-    background-color: #6bcfff;
+    background-color: #d8e5f0;
     /* fa4207 */
     padding: 1%;
     border-top-left-radius: 50px;
@@ -68,7 +73,7 @@ body{
     float: right;
 }
 .hero{
-    background-color: #eaf6ff;
+    background-color: #e7f5fe;
 }
 
 .cirpi-title{
@@ -120,18 +125,22 @@ body{
 }
 
 .OPE-title{
-   /* padding-top: 2%; */
+   padding-top: 2%;
    color: #003257;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     text-align: center;
+    
 }
 .OPE-title h1{
     font-weight: bold;
     font-size: 40px !important;
+    
+    
 }
 
 .OPE-title h1{
     font-size: 250%;
+    
 }
 /* .OPE-tittle2{
     color: #FF521B;
@@ -139,12 +148,14 @@ body{
 .OPE{
     display: block;
     /* place-items: center;  */
-    /* padding-bottom: 1%; */
+    padding-top: none;
 }
 
 .OPE-section{
    display: flex;
    align-items: center !important;
+
+   
 }
 .OPE-section img{
     justify-content: center;
@@ -166,7 +177,7 @@ body{
      padding: 2%;
 }
 .OPI{
-    background-color:#d8e5f0;
+    background-color:#e7f5fe;
     display: block;
     place-items: center;
     padding-bottom: 3%;
@@ -186,7 +197,14 @@ body{
     border-bottom-right-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    transition: 0.3s;
 
+
+}
+.cartd:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: 0.3s;
 }
 
 .card-body {
@@ -206,6 +224,8 @@ body{
 
 .card-title {
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    font-weight: bold;
     padding-bottom: 3% !important;
 }
 
@@ -231,18 +251,18 @@ body{
     position: relative;
     z-index: 1;
     color: white;
+    padding-bottom: none;
 }
 
-.OVR-contain{
-
-
+.OVR-contain {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
 }
 .OVR-contain h1{
     font-size: 20px;
 }
-
 .our-vision{
-    padding: 1%;
+    padding-top: 1%;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
 
 }
@@ -258,7 +278,7 @@ body{
 
 .OV p{
     font-size: 20px;
-    padding: 1%;
+    padding-bottom: 3%;
     text-align: center;
 }
 
@@ -268,31 +288,32 @@ body{
 
 .OM {
     padding: 2%;
-    background-color: white;
-    display: block;
+    background-color:#ffffff;
+    /* display: block; */
     place-items: center;
-    position: relative;
-    z-index: 1;
+    /* position: relative; */
+    /* z-index: 1; */
 }
 
 .our-mission-text{
-    color: #003257 ;
+    color: #003257 !important;
     text-align: justify !important;
     margin-left:10% ;
 }
+
 .OVM-contain h1{
     margin-left: 10%;
     font-size:24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    color: #003257;
+    color: #003257 ;
     padding: 1%;
 }
 
 .our-Mission h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold !important;  
-    color: #003257;
+    color: #003257 !important;
 }
 .mission-list{
     margin-left: 10%;
@@ -309,10 +330,29 @@ body{
 }
 
 .OG{
-    background-color: white;
-    padding: 1%;
+    background-color: #e7f5fe;
 }
 
+.OG-contain{
+    padding: 3%;
+    margin-left: 2% !important;
+}
+
+.OG-card1{
+    background-color: #ffedf9;
+}
+
+.OG-card2{
+    background-color: #d7f0ea;
+}
+
+.OG-card3{
+    background-color: #fff7d9;
+}
+
+.OG-card4{
+    background-color: #c8e7f5;
+}
 .OG-title{
     color: #003257;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -331,9 +371,6 @@ body{
     color: #003257;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.OG-colum{
-    padding: 1%;
-}
 
 .OG-text{
     color: #003257;
@@ -343,29 +380,33 @@ body{
     background-color: white;
     display: block;
     place-items: center;
-    margin-top: 20%;
+
+
+}
+.support_img{
+    width: 30% !important;
+    padding: 2%;
 }
 
 .GI-contain{
-    background-color: #A7F9FF;
-    background-image: url("/images/GI_img.png");
+    background-color: #e7f5fe !important;
 }
 .GI img{
-    width: 60%;
+    width: 50%;
     justify-content: center;
+    padding: 2%;
 }
 .GI p{
     color: #003257;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-    padding-top: 1%;
-
+    padding: 5%;
     font-size: 130%;
-    text-align: justify;
+    text-align: center;
 }
 .GI-contain h2{
-    font-size: 250%;
+    font-size: 40px;
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
 }
 
 .get-involved{
@@ -377,7 +418,147 @@ body{
 .get-involved h1{
     font-weight: bold;
 }
+.board-members{
+    background-color: #ffffff;
+    color:#003257;
+    padding: 1%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.board-members h1{
+    font-weight: bold;
+}
+.our-board{
+    background-color: #e7f5fe;
+    padding: 2%;
+}
+.our-board h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:#003257;
+}
 
+/* body.fixed {
+    overflow: hidden;
+}
+
+body#blur.active {
+    filter: blur(10px) !important;
+    pointer-events: none;
+}
+ */
+
+/* .popup {
+    width: 70%;
+    max-height: 80vh;
+    padding: 2%;
+    text-align: justify;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.3s, visibility 0s 0.3s;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #ffffff;
+    background-image: url(/images/cirpi_logo\ 1.png);
+    background-repeat: no-repeat;
+    background-size:cov;
+    backface-visibility: visible;
+    background-position-y:bottom ;
+    background-position-x:center;
+    background-attachment:local;
+} */ 
+body.fixed {
+    overflow: hidden;
+}
+
+body#blur.active {
+    filter: blur(10px) !important;
+    background: fixed !important;
+}
+
+#blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: none;
+}
+
+.popup {
+    width: 70%;
+    max-height: 80vh;
+    padding: 2%;
+    text-align: justify;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.3s, visibility 0s 0.3s;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    background-color: #ffffff;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s;
+}
+
+/* //// */
+.OBI-1 {
+    background-color: #e7f5fe !important;
+    text-align: center;
+}
+
+.btn{
+    color: #e7e7e7 !important;
+    background-color: #001f42 !important;
+    border-color: #ffffff;
+    font-weight: bold !important;
+
+}
+
+.OBI-1 h1{
+    padding-top: 5%;
+}
+
+.OBI-1 h3{
+    font-size: 16px;
+    font-weight: bold;
+    color: #003257;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.OBI-1 p{
+    font-size: 14px;
+    color: #003257;
+}
+
+.OBI-1 img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+}
 .CTU{
     background-color: white;
     color: #003257;
@@ -413,7 +594,7 @@ body{
     padding-top:2% ;
     padding-bottom: 1%;
     left: 15%;
-    background-color: #A7F9FF;
+    background-color: #e7f5fe;
     border-radius: 5px;
     position: absolute;
     z-index: 2;
@@ -438,11 +619,10 @@ body{
     margin-bottom: 1%;
     position: absolute;  
     z-index: 3;
-    
 }   
 .spacer{
-    padding-top: 2.5%;
-    padding-bottom: 4.5%;
+    padding-top: 1.5%;
+    padding-bottom: 5.5%;
     background-color: #ffffff;
 }
 
@@ -482,7 +662,7 @@ body{
 
 /* Media Queries */
 
-@media (max-width:1920px){
+@media (max-width:2715px){
 
 .logo{
     width: 40%;
@@ -490,7 +670,7 @@ body{
 }
     
 .nav-link {
-    font-size: 110% !important;
+    font-size: 100% !important;
 }
 
 
@@ -498,224 +678,18 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media Queries */
-/* 
-@media (max-width:992px){
+@media (max-width:1590px){
     .logo{
-        width: 30%;
-        padding: 0%;
-        margin-left: 10%;
-    }
-
-    .donate-btn{
-        width:30%;
-        float: inline-end !important;
-    }
-    .navbar-toggler{
-        float: inline-start;
-    }
-    .hero {
-        padding: 10%;
-    }
-    .title{
-        width: 100%;
-    }
-    .OPE-section p{
+        width: 40% ;
         padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 7.5%;
     }
-    .title-2{
-        width: 100%;
-    }
-    .card img{
-        width: 100%;
-    }
-    .card-title{
-        text-align: center;
-    }
-    .card-text{
-        text-align: justify;
-    }
-    .our-vision{
-        width: 100%;
-    }
-    .OV p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 7.5%;
-    }
-    .OV img{
-        width: 100%;
-    }
-    .our-vission{
-        width: 100%;
-    }
-    .OM p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 7.5%;
-    }
-    .OM img{
-        width: 100%;
-    }
-    .GI img{
-        width: 100%;
-    }
-    .GI p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 1%;
-    }
-    .GI-contain h2{
-        font-size: 200%;
-    }
-    .get-involved{
-        width: 100%;
-    }
-    .foot_logo{
-        padding-top: 10%;
-        width: 100%;
-        padding-bottom: 2%;
-    }
-    .social_icon {
-        list-style: none;
-        display: flex;
-        gap: 1%;
-        justify-content: center;
-        margin-top: 10%;
-    }
-
-    .main-footer{
-        padding-top: 1%;
-        margin-top: 12%;
-        position: relative;
-        z-index: 1;
-    }
-    .sub-footer{
-        margin-top: 2%;
-        padding: 2%;
-        left: 7.5%;
-        bottom: 100%;
 }
-} */
-/* @media (max-width: 500px) {
-    .logo{
-        width: 100%;
-        padding-left: 0%;
-    }
-    .hero {
-        padding: 10%;
-    }
-    .title{
-        width: 100%;
-    }
-    .OPE-section p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 7.5%;
-    }
-    .title-2{
-        width: 100%;
-    }
-    .card img{
-        width: 100%;
-    }
-    .card-title{
-        text-align: center;
-    }
-    .card-text{
-        text-align: justify;
-    }
-    .our-vision{
-        width: 100%;
-    }
-    .OV p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 7.5%;
-    }
-    .OV img{
-        width: 100%;
-    }
-    .our-vission{
-        width: 100%;
-    }
-    .OM p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 7.5%;
-    }
-    .OM img{
-        width: 100%;
-    }
-    .GI img{
-        width: 100%;
-    }
-    .GI p{
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 5%;
-        padding-top: 1%;
-    }
-    .GI-contain h2{
-        font-size: 200%;
-    }
-    .get-involved{
-        width: 100%;
-    }
-    .foot_logo{
-        padding-top: 10%;
-        width: 100%;
-        padding-bottom: 2%;
-    }
-    .social_icon {
-        list-style: none;
-        display: flex;
-        gap: 1%;
-        justify-content: center;
-        margin-top: 10%;
-    }
-    .social_media_icon {
-        color: rgb(179, 44, 44);
-        font-size: 200%;
-    }
-    .main-footer{
-        padding-top: 1%;
-        margin-top: 12%;
-        position: relative;
-        z-index: 1;
-    }
-    .sub-footer{
-        margin-top: 2%;
-        padding: 2%;
-        left: 7.5%;
-        bottom: 100%;
-}
-} */
+
+
+
+
+
+
+
+
+
