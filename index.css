@@ -1097,13 +1097,16 @@ body#blur.active {
 
 }
 
+
+ /* mobile big  */
+
 @media (min-width: 425px) and (max-width: 824px) {
     .logo{
-        width: 50% !important;
+        width: 80% !important;
         margin-right: 10% !important;
     }
     .navbar-toggler{
-        background-color: #ffffff !important;
+        background-color: #dd3a3a !important;
     }
     .collapse {
         align-items: center !important;
