@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agaram Foundation</title>
+    <style>
+        body {
+            background-color: #1a1310;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .footer {
+            padding: 20px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        .tagline {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7f50;
+        }
+        .social-icons {
+            margin: 10px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 30px;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .email-form {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .email-form input {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+        .email-form button {
+            padding: 10px;
+            border: none;
+            background-color: #ff7f50;
+            color: white;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+        }
+        .email-form button:hover {
+            background-color: #ff5722;
+        }
+        .footer-links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .footer-links a {
+            color: #ff7f50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="https://www.agaram.in/images/logo.png" alt="Agaram Logo">
+        </div>
+        <div class="tagline">#changealife</div>
+
+        <div class="social-icons">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Skype"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        </div>
+
+        <div class="contact-info">
+            <p>📍 4/15, Arulambal Street, T.Nagar, Chennai - 600 017</p>
+            <p>📞 Support: +91 98418 91000</p>
+            <p>📧 Email: info@agaram.in</p>
+        </div>
+
+        <div class="email-form">
+            <input type="text" id="name" placeholder="Enter Name">
+            <input type="email" id="email" placeholder="Enter Email">
+            <button onclick="submitForm()">Submit</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms of Use</a>
+        </div>
+    </div>
+
+    <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+
+            if (name === "" || email === "") {
+                alert("Please enter both name and email.");
+                return;
+            }
+
+            fetch("https://docs.google.com/spreadsheets/d/1bXwSrfZHvpi_6zKFuaFE0PQZRQZAraDAG-8334vnWWc/edit?gid=0#gid=0", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ name: name, email: email }),
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert("Submitted Successfully!");
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+            })
+            .catch(error => alert("Error submitting!"));
+        }
+    </script>
+
+</body>
+</html>

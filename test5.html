@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Books Carousel</title>
+
+    <!-- Include Owl Carousel and jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="test5.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container px-4 py-5 position-relative" id="custom-cards">
+        <h2 class="pb-2 border-bottom">Books to Read</h2>
+        <div class="owl-carousel owl-theme">
+            
+            <div class="item">
+                <div class="card shadow-sm">
+                    <img src="https://user-images.githubusercontent.com/78242022/285021205-96fd5356-c0a2-498b-9824-8fce86ee4f5d.jpg" width="100%" height="225px" />
+                    <div class="card-body">
+                        <div>
+                            <img src="https://user-images.githubusercontent.com/78242022/285021219-856eeae2-4823-4e33-bdff-d26bac9a03ff.svg" alt="USA Flags">
+                            <h2>US Store</h2>
+                        </div>
+                        <p class="card-text">Psychology of Attraction: Learn the psychological secrets of attraction...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card shadow-sm">
+                    <img src="https://user-images.githubusercontent.com/78242022/285021210-d0c372e1-a350-4088-ae7a-99c20a7a47d0.jpg" width="100%" height="225px" />
+                    <div class="card-body">
+                        <div>
+                            <img src="https://user-images.githubusercontent.com/78242022/285021219-856eeae2-4823-4e33-bdff-d26bac9a03ff.svg" alt="USA Flags">
+                            <h2>US Store</h2>
+                        </div>
+                        <p class="card-text">Dark Psychology Secrets: Learn The Art of Reading People...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="card shadow-sm">
+                    <img src="https://user-images.githubusercontent.com/78242022/285021200-36ff2e67-507e-4fb2-81f5-41f409157d4f.jpg" width="100%" height="225px" />
+                    <div class="card-body">
+                        <div>
+                            <img src="https://user-images.githubusercontent.com/78242022/285021219-856eeae2-4823-4e33-bdff-d26bac9a03ff.svg" alt="USA Flags">
+                            <h2>US Store</h2>
+                        </div>
+                        <p class="card-text">Law Of Attraction - Get Your Ex Back & Manifesting True Love...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of Owl Carousel -->
+    </div>
+
+    <!-- Owl Carousel Initialization -->
+    <script>
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        center: true,  // Ensures center mode
+        items: 3,      // Shows 3 items at a time
+        margin: 15,    // Adds space between items
+        nav: true,     // Shows navigation arrows
+        dots: true,    // Enables dots below
+        autoplay: true,
+        autoplayTimeout: 2500, // Auto-slide every 2.5 seconds
+        smartSpeed: 600,  // Smooth transition speed
+        responsive: {
+            0: {
+                items: 1  // Mobile: Show 1 item
+            },
+            768: {
+                items: 2  // Tablet: Show 2 items
+            },
+            1024: {
+                items: 3  // Desktop: Show 3 items
+            }
+        }
+    });
+});
+
+    </script>
+
+</body>
+</html>
