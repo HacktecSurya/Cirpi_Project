@@ -25,19 +25,24 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!-- <link rel="stylesheet" href="test5.css"> -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Remove this line -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 
     <!-- Owl Carousel JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
+    <!-- https://script.google.com/macros/s/AKfycbzBGSxageT-5FXJr_vN3npFqCho5udbXVy--RG1jW5ElaB0gGb8bQcyXz8seGHpYT8/exec -->
 
-    <!-- https://script.google.com/macros/s/AKfycbxz7OYB7awUCTzQOTWLih5ciUUDXsnDSsoBiY23uzc-KoxsInycm-IUEHqzymDetJlW/exec
-      -->
-      <!-- AKfycbxz7OYB7awUCTzQOTWLih5ciUUDXsnDSsoBiY23uzc-KoxsInycm-IUEHqzymDetJlW -->
+    <!-- AKfycbzBGSxageT-5FXJr_vN3npFqCho5udbXVy--RG1jW5ElaB0gGb8bQcyXz8seGHpYT8 -->
+
 </head>
 
 <body id="home" >
@@ -57,7 +62,7 @@
                 <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
 
                 <li><button class="donate-btn ms-auto" onclick="openPopup('popup_donate')">Donate</button></li>
                 <!-- <li><button class=" donate-btn ms-auto">Donate</button></li> -->
@@ -73,13 +78,17 @@
                 <h1>Support CIRPI Educational Foundation</h1>
                 <p>Your donation helps us provide educational resources and mentorship.</p>
             </div>
+        
             <form id="donationForm">
                 <label for="donorName">Name:</label>
                 <input type="text" id="donorName" name="donorName" required>
-                
+        
+                <label for="donorEmail">Email:</label>
+                <input type="email" id="donorEmail" name="donorEmail" required>
+        
                 <label for="donorMobile">Mobile Number:</label>
                 <input type="text" id="donorMobile" name="donorMobile" required>
-                
+        
                 <button type="submit" class="donate-btn">Proceed to Donate</button>
             </form>
         
@@ -93,28 +102,6 @@
         
             <button class="donate-btn" onclick="closePopup('popup_donate')">Close</button>
         </div>
-        
-        <script>
-       document.getElementById("donationForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    var formData = new FormData();
-    formData.append("name", document.getElementById("donorName").value);
-    formData.append("mobile", document.getElementById("donorMobile").value);
-
-    fetch("https://script.google.com/macros/s/AKfycbwF4naH_-uG71wOaCXBHVK9J61ZL01J831ZgZrDWGijIIPARxyeG2kBLfQv2ue4iavmpQ/exec", {
-        method: "POST",
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        alert("Donation details saved!");
-        document.getElementById("qrSection").style.display = "block";
-    })
-    .catch(error => console.error("Error:", error));
-});
-
-        </script>
         
 
         <!-- <button class="donate-btn"><img src="/images/donate_btn.png" alt="donate button"></button> -->
@@ -343,7 +330,7 @@
                 <h1>Our Vision</h1>
             </div>
             <div class="container-fluid OVR-contain">
-                <p>At Cirpi Educational Foundation, we envision a world where every student, regardless of their
+                <p class="OV-text" >At Cirpi Educational Foundation, we envision a world where every student, regardless of their
                     background,
                     has access to quality education, hands-on learning, and career-building opportunities. By
                     bridging
@@ -412,7 +399,7 @@
 
                 <!-- Mr. Gokul Kittusamy -->
                 <div class="col-xl-4 col-md-6 col-sm-12 gokul-col OBI-1">
-                    <img src="/images/sample-logo.png" alt="gokul">
+                    <img class="gokul-img" src="/images/sample-logo.png" alt="gokul">
                     <h1>Mr Gokul Kittusamy</h1>
                     <p>Elerchitek MD</p>
                     <button class="btn" onclick="openPopup('popup_gokul')">Read More</button>
@@ -463,7 +450,7 @@
 
                 <!-- Ms. Kaviya -->
                 <div class="col-xl-4 col-md-6 col-sm-12 OBI-1 gokul-col">
-                    <img src="/images/kaviya.png" alt="kaviya">
+                    <img class="kaviya-img" src="/images/kaviya.png" alt="kaviya">
                     <h1>Ms Kaviya</h1>
                     <p>Varahe Analytics , India</p>
                     <button class="btn" onclick="openPopup('popup_kaviya')">Read More</button>
@@ -547,79 +534,84 @@
 
     <div class="container-fluid section our-board">
         <div class="board-members">
-            <h1>Our Mentors</h1>
+            <h1 class="mentor-head" >Our Mentors</h1>
         </div>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid">
                                 <h1>Ms Preethi</h1>
-                                <p>jsdyrfguydsfgbcyhdcbvusydgfuhsdcgft</p>
+                                <p>Dell , Bangalore</p>
                             </div>
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid">
                                 <h1>Mr Srinivasan</h1>
-                                <p>Lions Club , Tambaram</p>
+                                <p>Lions Club, Tambaram</p>
                             </div>
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
-                                <h1>Arumugam sir</h1>
-                                <p> TN Govt School Teacher</p>
-                            </div>
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
-                                <h1>Mr Saravanan </h1>
-                                <p>Accenture , Chennai</p>
-                            </div>
-
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
-
-                                <h1>Mr Yoga Balaji</h1>
-                                <p>MuSigma , Bangalore</p>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Arumugam" class="img-fluid">
+                                <h1>Arumugam</h1>
+                                <p>TN Govt School Teacher</p>
                             </div>
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
-
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid">
+                                <h1>Mr Saravanan</h1>
+                                <p>Accenture, Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid">
+                                <h1>Mr Yoga Balaji</h1>
+                                <p>MuSigma, Bangalore</p>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid">
                                 <h1>Ms RajaLakshmi</h1>
                                 <p>-------</p>
                             </div>
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/sample-logo.png" alt="raghul">
-
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid">
                                 <h1>Mr Jijith Kumar</h1>
-                                <p>Senior Bailuf , Coimbator</p>
+                                <p>Senior Bailiff, Coimbatore</p>
                             </div>
-                            <div class="col-md-3 OBI-1 OBI-2">
-                                <img src="/images/shamutha.png" alt="raghul">
+                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
+                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid">
                                 <h1>Ms Shamyuktha</h1>
-                                <p>Titan , Hosur</p>
+                                <p>Titan, Hosur</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </div>
 
     <!-- <div class="container-fluid section OPI">
         <div class="OPI-title">
@@ -787,8 +779,8 @@
         <div class="row">
             <div class="col-6 vol-col text-center">
                 <img class="support_img" src="/images/volunteer.png" alt="volunteer_img">
-                <h2>Volunteer With Us</h2>
-                <p>Offer your skills and time to mentor students or contribute to educational programs. Sharing
+                <h2 class="GI-head">Volunteer With Us</h2>
+                <p class="GI-text" >Offer your skills and time to mentor students or contribute to educational programs. Sharing
                     knowledge can inspire and empower learners, creating a positive impact on their academic <span
                         class="GI-span"> and
                         personal growth</span></p>
@@ -796,8 +788,8 @@
             
             <div class="col-6 text-center">
                 <img class="support_img" src="/images/support.png" alt="support_img">
-                <h2>Support With Us</h2>
-                <p>Make a difference today by contributing to education programs. Your support creates learning
+                <h2 class="GI-head" >Support With Us</h2>
+                <p class="GI-text" >Make a difference today by contributing to education programs. Your support creates learning
                     opportunities for students in need. Together, we can shape a brighter future and inspire the
                     next <span class="GI-span-2">generation.</span></p>
             </div>
@@ -897,7 +889,7 @@
 
     <div id="blur-overlay"></div>
 
-    <div class="container-fluid footer">
+    <div id="contact-us" class="container-fluid footer">
         <div class=" container">
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-12">
