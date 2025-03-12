@@ -59,7 +59,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link first-link" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
                 <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
@@ -72,21 +72,20 @@
         </div>
 
         <div id="blur-overlay"></div>
-
         <div class="popup" id="popup_donate">
             <div class="intro-head">
                 <h1>Support CIRPI Educational Foundation</h1>
                 <p>Your donation helps us provide educational resources and mentorship.</p>
             </div>
         
-            <form id="donationForm">
-                <label for="donorName">Name:</label>
+            <form class="donation-form" id="donationForm">
+                <label class="DF-name" for="donorName">Name:</label>
                 <input type="text" id="donorName" name="donorName" required>
         
-                <label for="donorEmail">Email:</label>
+                <label class="DF-Email" for="donorEmail">Email:</label>
                 <input type="email" id="donorEmail" name="donorEmail" required>
         
-                <label for="donorMobile">Mobile Number:</label>
+                <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
                 <input type="text" id="donorMobile" name="donorMobile" required>
         
                 <button type="submit" class="donate-btn">Proceed to Donate</button>
@@ -94,7 +93,7 @@
         
             <div id="qrSection" style="display: none;">
                 <div class="intro-head">
-                    <h1>Scan to Donate</h1>
+                    <h1 class="scan-txt">Scan to Donate</h1>
                 </div>
                 <img class="QR-img" src="/images/QR.webp" id="qrCode" alt="QR Code">
                 <p id="countdown"></p>
@@ -110,7 +109,7 @@
     <!-- Hero Section -->
     <div class="container-fluid section hero_section">
         <section class="hero  text-center ">
-            <div class="container-fluid hero_container">
+            <div class="hero_container">
                 <h1 class="cirpi-title"><span class="cirpi_text">CIRPI </span>Educational Foundation</h1>
                 <br>
                 <p class="hero-sub-title">
@@ -203,7 +202,7 @@
             <div class="container-fluid OG-contain">
                 <div class="our-goal">
                     <div class="row g-3">
-                        <div class="col-xl-3 col-md-6  col-sm-12">
+                        <div class="col-xl-3 col-md-6  col-sm-6">
                             <div class="cartd OG-card1">
                                 <div class="card-body">
                                     <h5 class="card-title">
@@ -217,7 +216,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-md-6 col-sm-6">
                             <div class="cartd OG-card2">
                                 <div class="card-body">
                                     <h5 class="card-title">Holistic Growth</h5>
@@ -228,7 +227,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-md-6 col-sm-6">
                             <div class="cartd OG-card3">
                                 <div class="card-body">
                                     <h5 class="card-title">Leadership & Innovation </h5>
@@ -241,7 +240,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-3 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-md-6 col-sm-6">
                             <div class="cartd OG-card4">
                                 <div class="card-body">
                                     <h5 class="card-title">Sustainable Independence</h5>
@@ -259,8 +258,37 @@
             </div>
         </div>
     </div>
+    <div class="Our-Vission">
+        <div class="container-fluid section OV">
+            <div class="our-vision ">
+                <h1>Our Vision</h1>
+            </div>
+            <div class="container-fluid OVR-contain">
+                <p class="OV-text" >At Cirpi Educational Foundation, we envision a world where every student, regardless of their
+                    background,
+                    has access to quality education, hands-on learning, and career-building opportunities. By
+                    bridging
+                    the
+                    gap between theoretical knowledge and real-world applications, we equip students with financial
+                    assistance, mentorship, and practical training to help them excel in their fields, innovate
+                    solutions,
+                    and lead industries with purpose. Beyond academics, we focus on holistic development, fostering
+                    leadership, problem-solving skills, and a mindset of lifelong learning. Through a collaborative
+                    and
+                    inclusive educational ecosystem, we strive to create future professionals who not only thrive in
+                    their
+                    careers but also drive positive change, contributing to a more equitable, innovative, and
+                    socially
+                    responsible world. Our mission is to nurture future professionals who will lead industries,
+                    innovate solutions, and
+                    contribute to a more equitable world.
+                </p>
+            </div>
+        </div>
+    </div>
+    
 
-    <div class="container-fluid section OPE">
+    <!-- <div class="container-fluid section OPE">
         <div class="container-fluid OPE-section">
             <div class="row">
                 <div class="OPE-title">
@@ -281,10 +309,10 @@
             </div>
 
         </div>
-    </div>
+    </div> -->
 
     <div class="transprent_place section ">
-
+        <h1>Your Small Help Can Spark a <span class="tp-bright">Bright Future</span> </h1>
     </div>
 
     <div class="container-fluid section OM">
@@ -324,35 +352,7 @@
 
     </div>
 
-    <div class="Our-Vission">
-        <div class="container-fluid section OV">
-            <div class="our-vision ">
-                <h1>Our Vision</h1>
-            </div>
-            <div class="container-fluid OVR-contain">
-                <p class="OV-text" >At Cirpi Educational Foundation, we envision a world where every student, regardless of their
-                    background,
-                    has access to quality education, hands-on learning, and career-building opportunities. By
-                    bridging
-                    the
-                    gap between theoretical knowledge and real-world applications, we equip students with financial
-                    assistance, mentorship, and practical training to help them excel in their fields, innovate
-                    solutions,
-                    and lead industries with purpose. Beyond academics, we focus on holistic development, fostering
-                    leadership, problem-solving skills, and a mindset of lifelong learning. Through a collaborative
-                    and
-                    inclusive educational ecosystem, we strive to create future professionals who not only thrive in
-                    their
-                    careers but also drive positive change, contributing to a more equitable, innovative, and
-                    socially
-                    responsible world. Our mission is to nurture future professionals who will lead industries,
-                    innovate solutions, and
-                    contribute to a more equitable world.
-                </p>
-            </div>
-        </div>
-    </div>
-    
+
     <div id="about-us" class="container-fluid section our-board">
         <div class="container">
             <div class="board-members">
@@ -529,7 +529,7 @@
                     </div> -->
 
             </div>
-        </div>
+        </div> 
     </div>
 
     <div class="container-fluid section our-board">
@@ -540,30 +540,24 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid">
+                        <div class="row d-flex justify-content-center Our-B">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid mentor-img">
                                 <h1>Ms Preethi</h1>
                                 <p>Dell , Bangalore</p>
                             </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
                                 <h1>Mr Srinivasan</h1>
                                 <p>Lions Club, Tambaram</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Arumugam" class="img-fluid">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Arumugam" class="img-fluid mentor-img">
                                 <h1>Arumugam</h1>
                                 <p>TN Govt School Teacher</p>
                             </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid mentor-img">
                                 <h1>Mr Saravanan</h1>
                                 <p>Accenture, Chennai</p>
                             </div>
@@ -572,36 +566,31 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid">
+                        <div class="row d-flex justify-content-center Our-B">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
                                 <h1>Mr Yoga Balaji</h1>
                                 <p>MuSigma, Bangalore</p>
                             </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
                                 <h1>Ms RajaLakshmi</h1>
                                 <p>-------</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
                                 <h1>Mr Jijith Kumar</h1>
                                 <p>Senior Bailiff, Coimbatore</p>
                             </div>
-                            <div class="col-xl-3 col-md-6 col-sm-6 d-flex flex-column align-items-center">
-                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid">
+                            <div class="col-xl-3 col-md-3 col-sm-3 d-flex flex-column align-items-center">
+                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
                                 <h1>Ms Shamyuktha</h1>
                                 <p>Titan, Hosur</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -611,6 +600,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
         </div>
 
     <!-- <div class="container-fluid section OPI">
@@ -900,8 +890,6 @@
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
                                 alt="Instagram"></a>
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Skype"></a>
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
                     </div>
 

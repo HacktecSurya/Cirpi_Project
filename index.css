@@ -1,10 +1,12 @@
-body{
+body {
     overflow-x: hidden !important;
 
 }
-html{
+
+html {
     scrollbar-width: none !important;
 }
+
 /* .cirpi-title {
     opacity: 1;
     transform: translateY(0);
@@ -223,15 +225,22 @@ html {
 }
 
 .logo {
-    width: 40% !important;
+    width: 35% !important;
     padding-left: 15%;
 }
 
 .navbar-nav {
     display: flex;
     align-items: center;
-    gap: 20px; /* Adds space between links */
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+    gap: 20px;
+    /* Adds space between links */
 }
+.first-link{
+    padding-left: 50% !important;
+}
+
 .donate-btn {
     color: #e7e7e7 !important;
     background-color: #001f42 !important;
@@ -242,15 +251,19 @@ html {
     transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
     transform: scale(1);
     border-radius: 8px;
-    margin-left: auto; 
+    margin-left: auto;
 }
-.QR-img{
+
+.QR-img {
     width: 40% !important;
 }
+
 .donate-btn:hover {
-    background-color:#006834 !important;
+    background-color: #6bcfff !important;
+    color: #001f42 !important;
     transform: scale(0.9);
 }
+
 .hero {
     background-image: url("/images/student_img.png");
     background-size: cover;
@@ -265,16 +278,15 @@ html {
 
 .hero_section {
     background-color: rgb(255, 255, 255);
+
 }
 
 .navbar-nav {
     display: flex;
     justify-content: space-evenly;
-    /* Equal space between items */
     width: 150%;
-    /* Ensure it spans the full container width */
     background-color: #d8e5f0;
-    /* fa4207 */
+    padding-right: 5% !important;
     padding: 1%;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -284,16 +296,17 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 10%;
 }
 
 
 
 /* Navbar Links */
 .nav-link {
-    font-size: 100% !important;
+    font-size: 110% !important;
     color: #003257 !important;
     font-weight: bold !important;
+
 }
 
 .nav-link:hover {
@@ -337,25 +350,28 @@ html {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
     text-align: center;
     padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /* .intro-head span{
     color: #ffd700;
 } */
 .intro-text {
-    padding: 3%;
+    padding: 2%;
     color: #003257;
     text-align: justify;
-    margin-left: 10%;
+    margin-left: 5%;
 }
-.Intro-img{
+
+.Intro-img {
     width: 50%;
 }
 
 .intro-text p {
     font-size: 24px !important;
 }
-.car-img{
+
+.car-img {
     width: 85% !important;
 }
 
@@ -435,7 +451,7 @@ html {
     transition: 0.3s;
 }
 
- .cards{
+.cards {
     background-color: #ffffff;
     color: #E4FEFF;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -444,7 +460,7 @@ html {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     transition: 0.3s;
- }
+}
 
 .cartd:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -492,24 +508,25 @@ html {
     display: block;
     place-items: center;
     color: white;
-    padding-bottom: 0;
 }
 
-.Our-Vission{
-    padding-bottom: 3%;
+.Our-Vission h1 {
+    padding-bottom: 5% !important;
+    padding-top: 5% !important;
 }
 
-.OV p{
+.OV p {
     opacity: 0.8;
 }
-.OV-img{
-    width:50% !important;
+
+.OV-img {
+    width: 50% !important;
 }
 
 .OVR-contain {
     padding-left: 5% !important;
     padding-right: 5% !important;
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
 }
 
 .OVR-contain h1 {
@@ -522,7 +539,7 @@ html {
 }
 
 .our-vision h1 {
-    text-align:justify;
+    text-align: justify;
     font-size: 40px;
     font-weight: bold;
 }
@@ -550,6 +567,10 @@ html {
     margin-left: 10%;
 }
 
+.OVM-contain {
+    /* padding: 1%; */
+}
+
 .OVM-contain h1 {
     margin-left: 10%;
     font-size: 24px;
@@ -558,7 +579,8 @@ html {
     color: #003257;
     padding: 1%;
 }
-.OVM-contain h1{
+
+.OVM-contain h1 {
     text-align: left !important;
 }
 
@@ -573,7 +595,8 @@ html {
     text-align: center !important;
     padding-top: 5%;
 }
-.mission-list p{
+
+.mission-list p {
     opacity: 0.8;
 }
 
@@ -586,12 +609,13 @@ html {
 .OM img {
     width: 50% !important;
 }
+
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 
@@ -657,13 +681,22 @@ html {
     background-size: cover;
 }
 
+.transprent_place h1 {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.tp-bright {
+    color: #6bcfff;
+    font-family: 'Dancing Script', cursive;
+}
+
 .GI {
     background-color: white;
     display: block;
     place-items: center;
-    margin-top: 5%;
-
-
 }
 
 .support_img {
@@ -706,7 +739,7 @@ html {
     font-weight: bold;
 }
 
-.board-members {    
+.board-members {
     color: #003257;
     padding: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -744,6 +777,7 @@ body#blur.active {
 #blur-overlay {
     backdrop-filter: blur(5px);
 }
+
 .popup {
     overflow-y: auto;
     width: 50%;
@@ -768,12 +802,14 @@ body#blur.active {
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.3s;
 }
-.popup p{
+
+.popup p {
     color: #003257;
     font-size: 130%;
     text-align: center;
 }
-.popup label{
+
+.popup label {
     color: #003257;
     font-size: 130%;
     text-align: center;
@@ -789,6 +825,7 @@ body#blur.active {
     z-index: 999;
     display: none;
 }
+
 /* Input Field Styling */
 .popup label {
     display: block;
@@ -804,6 +841,7 @@ body#blur.active {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 input {
     width: 80%;
     padding: 8px;
@@ -854,60 +892,71 @@ input {
     background-color: #e7f5fe !important;
     text-align: center;
 }
+
 .btn {
     color: #e7e7e7 !important;
     background-color: #001f42 !important;
     border-color: #ffffff;
     font-weight: bold !important;
     display: flex;
-    padding-right: 10% !important; 
-    padding-left: 10% !important; 
+    padding-right: 10% !important;
+    padding-left: 10% !important;
     text-align: center !important;
-    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out; 
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
     transform: scale(1);
 }
 
 .btn:hover {
-    background-color:#b0dcf1 !important; /* Change color on hover */
+    background-color: #b0dcf1 !important;
+    /* Change color on hover */
     transform: scale(1.1);
-    color:#003257 !important;
+    color: #003257 !important;
 }
+
 .popup .btn {
-    padding-right: 1%; 
-    padding-left: 1%; 
-    font-size: 18px; /* Increase text size */
-    border-radius: 8px; /* Optional: Rounded corners */
+    padding-right: 1%;
+    padding-left: 1%;
+    font-size: 18px;
+    /* Increase text size */
+    border-radius: 8px;
+    /* Optional: Rounded corners */
 }
+
 .popup {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .rahul-col {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .OBI-1 h1 {
     padding-top: 5%;
 }
+
 .OBI-1 h3 {
     font-size: 16px;
     font-weight: bold;
     color: #003257;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .OBI-1 p {
     font-size: 14px;
     color: #003257;
 }
+
 .OBI-1 img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
-    
+
 
 
 
@@ -929,6 +978,7 @@ input {
     width: 70% !important;
     padding-left: 5% !important;
 }
+
 .footer-logo-text {
     font-size: 40px;
     font-weight: bold;
@@ -944,7 +994,8 @@ input {
     padding-left: 20% !important;
 
 }
-.tagline{
+
+.tagline {
     color: #3b6c83;
     font-size: 24px;
     font-weight: bold;
@@ -970,18 +1021,18 @@ input {
     margin-bottom: 20px;
 }
 
-.contact-info h1{
+.contact-info h1 {
     color: #c8e7f5;
     font-size: 40px;
-    font-weight:bold;
-    text-align: center;    
+    font-weight: bold;
+    text-align: center;
     padding: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
 .contact-info p {
-    margin-left: 15% !important ;
+    margin-left: 15% !important;
     font-size: 20px !important;
     padding-bottom: 3% !important;
 }
@@ -1047,7 +1098,8 @@ input {
     padding: 0 !important;
     box-sizing: border-box;
 }
-.logos::before, 
+
+.logos::before,
 .logos::after {
     content: '';
     /* width: 300px; */
@@ -1106,7 +1158,7 @@ input {
     overflow: hidden;
     text-align: center;
     padding: 0;
-    
+
 }
 
 .card:nth-child(2) {
@@ -1139,9 +1191,11 @@ input {
 }
 
 .owl-item.active.center .card {
-    width: 350px !important; /* Reduced size */
+    width: 350px !important;
+    /* Reduced size */
     height: 550px !important;
-    transform: scale(1.02); /* Slightly reduced scaling */
+    transform: scale(1.02);
+    /* Slightly reduced scaling */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -1160,93 +1214,11 @@ input {
 }
 
 
-
-
-
-/* small laptop */
-
-@media (min-width:769px ) and (max-width:1024px ){
-    .logo{
-        width: 50% !important;
-    }
-    .nav-link {
-        font-size: 90%!important;
-        padding: 0.5rem 1rem;
-        text-align: left;
-    }
-    .cirpi-title {
-        font-size: 55px !important;
-    }
-    .hero-sub-title {
-        font-size: 24px;
-    }
-    .intro-text p{
-        font-size: 20px !important;
-    }
-    .Intro-img{
-        width: 60% !important;
-    }
-    .OG-contain {
-        padding-left: 10% !important;
-    }
-    .cartd{
-        width: 23rem !important;
-        height: 11rem !important;
-    }
-    .our-goal{
-        padding-bottom: 2% !important;
-    }
-    .OG-card1{
-        padding: 2%;
-    }
-    .OPE-img{
-        width: 40% !important;
-    }
-    .OPE{
-        padding-bottom: 2%;
-        padding-top: 1%;
-    }
-    .transprent_place{
-        min-height: 250px;
-    }
-    .OM {
-        place-items: center;
-    }
-    .our-Mission{
-        padding-bottom: 1%;
-    }
-    .popup {
-        width: 70%;
-        max-height: 85%;
-    }
-    .pop_img {
-        max-width: 30% !important;
-    }
-    .OM img {
-        padding-top: 5%;
-        width: 40% !important;
-    }
-    .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 40px; 
-    }
-    
-    .OV-img {
-        max-width: 100%;
-        height: auto;
-    }
-    
-}
-
-
 /* laptop */
 
-@media (min-width:769px ) and (max-width:1441px ) {
+@media (max-width:1441px) {
     .nav-link {
-        font-size: 90%!important;
+        font-size: 90% !important;
         padding: 0.5rem 1rem;
         text-align: left;
     }
@@ -1263,289 +1235,499 @@ input {
         border-bottom-left-radius: 50px;
         gap: 1% !important;
     }
-    .logo{
-        width: 50% !important;
+
+    .logo {
+        width:0% !important;
     }
+
+    .intro_container {
+        padding-right: 5% !important;
+    }
+
     .OG-contain {
         padding-right: 3% !important;
     }
-    .cartd{
+
+    .cartd {
         width: 19rem;
         height: 11rem;
     }
-    .transprent_place{
+
+    .transprent_place {
         min-height: 300px;
     }
+
     .OM img {
         padding-top: 5%;
         width: 60% !important;
     }
+
     .img-container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
     }
-    
+
     .OV-img {
         max-width: 100%;
         height: auto;
     }
-    .Intro-img{
+
+    .Intro-img {
         width: 80%;
     }
+
     .popup {
         width: 75%;
         max-height: 80vh;
         padding: 2%;
     }
+
     .pop_img {
         max-width: 25% !important;
     }
+
+    .footer-logo-text {
+        font-size: 35px !important;
+    }
+
     
-    
+
+
 }
+ 
 
-/* tablet view */
 
-@media (min-width:768px ) and (max-width:769px ) {
-    .logo{
-        width: 40% !important;
+
+
+/* small laptop */
+
+@media(max-width:1024px) {
+    .logo {
+        width: 50% !important;
     }
-    .navbar-toggler{
-        background-color: #ffffff !important;
+
+    .nav-link {
+        font-size: 90% !important;
+        padding: 0.5rem 1rem;
+        text-align: left;
     }
-    .collapse {
-        align-items: center !important;
-    }
-    .navbar-collapse {
-        display: flex;
-        justify-content: flex-start !important;
-    } 
+
     .cirpi-title {
-        font-size: 40px !important;
+        font-size: 55px !important;
     }
+
     .hero-sub-title {
-        font-size: 18px;
+        font-size: 24px;
     }
-    .intro-text p{
-        font-size: 18px !important;
-    }
-    .intro-head h1{
-        font-size: 30px !important;
-    }
-    .Intro-img{
-        width: 60%;
-    }
-    
-    .cartd{
-        width: 19rem;
-        height: 11rem;
-    }
-    .card-title{
+
+    .intro-text p {
         font-size: 20px !important;
     }
-    .OG-title h1{
-        font-size: 30px !important;
-    }
-    .card-text{
-        font-size: 16px !important;
-    }
-    .OG-contain {
-        padding-left: 5% !important;
-        padding-bottom: 5% !important;
-    }
-    .OPE-title h1{
-        font-size: 30px !important;
-    }
-    .OPE-section p{
-        font-size: 20px !important;
-    }
-    .OPE{
-        padding-bottom: 2% !important;
-        padding-top: 1% !important;
-    }
-    .OPE-img{
-        width: 70% !important;
-    }
-    .transprent_place{
-        min-height: 200px;
-    }
-    .our-Mission h1{
-        font-size: 30px !important;
-    }
-    .OM img {
-        padding-top: 5%;
+
+    .Intro-img {
         width: 60% !important;
     }
+
+    .OG-contain {
+        padding-left: 10% !important;
+    }
+
+    .cartd {
+        width: 23rem !important;
+        height: 11rem !important;
+    }
+
+    .our-goal {
+        padding-bottom: 2% !important;
+    }
+
+    .OG-card1 {
+        padding: 2%;
+    }
+
+    .OPE-img {
+        width: 40% !important;
+    }
+
+    .OPE {
+        padding-bottom: 2%;
+        padding-top: 1%;
+    }
+
+    .transprent_place {
+        min-height: 250px;
+    }
+
+    .OM {
+        place-items: center;
+    }
+
+    .our-Mission {
+        padding-bottom: 1%;
+    }
+
+    .popup {
+        width: 70%;
+        max-height: 85%;
+    }
+
+    .pop_img {
+        max-width: 30% !important;
+    }
+
+    .OM img {
+        padding-top: 5%;
+        width: 40% !important;
+    }
+
     .img-container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
     }
-    
+
     .OV-img {
         max-width: 100%;
         height: auto;
     }
-    .OVM-contain h1{
-        font-size: 20px !important;
+
+    .OVM-contain {
+        padding-right: 10% !important;
     }
-    .OVM-contain p{
-        font-size: 20px !important;
+    .mentor-img{
+        width: 80% !important;
     }
-    .our-vision h1{
-        font-size: 30px !important;
+
+    
+
+}
+
+
+/* tablet view */
+
+@media (max-width:769px) {
+    .logo {
+        width: 40% !important;
     }
-    .OVR-contain p{
+
+    .navbar-toggler {
+        background-color: #ffffff !important;
+    }
+
+    .collapse {
+        align-items: center !important;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-start !important;
+    }
+
+    .cirpi-title {
+        font-size: 40px !important;
+    }
+
+    .hero-sub-title {
+        font-size: 18px;
+    }
+
+    .intro_container {
+        padding-right: 5% !important;
+    }
+
+    .intro-text p {
         font-size: 18px !important;
     }
-    .OPI-title h1{
+
+    .intro-head h1 {
         font-size: 30px !important;
     }
-    .cards img{
+
+    .Intro-img {
+        width: 60%;
+    }
+
+    .cartd {
+        width: 19rem;
+        height: 11rem;
+    }
+
+    .card-title {
+        font-size: 20px !important;
+    }
+
+    .OG-title h1 {
+        font-size: 30px !important;
+    }
+
+    .card-text {
+        font-size: 16px !important;
+    }
+
+    .OG-contain {
+        padding-left: 5% !important;
+        padding-bottom: 5% !important;
+    }
+
+    .OPE-title h1 {
+        font-size: 30px !important;
+    }
+
+    .OPE-section p {
+        font-size: 20px !important;
+    }
+
+    .OPE {
+        padding-bottom: 2% !important;
+        padding-top: 1% !important;
+    }
+
+    .OPE-img {
+        width: 70% !important;
+    }
+
+    .transprent_place {
+        min-height: 200px;
+    }
+
+    .our-Mission h1 {
+        font-size: 30px !important;
+    }
+
+    .OM img {
+        padding-top: 5%;
+        width: 60% !important;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .OV-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .OVM-contain {
+        padding-right: 10% !important;
+    }
+
+    .OVM-contain h1 {
+        font-size: 20px !important;
+    }
+
+    .OVM-contain p {
+        font-size: 20px !important;
+    }
+
+    .our-vision h1 {
+        font-size: 30px !important;
+    }
+
+    .OVR-contain p {
+        font-size: 18px !important;
+    }
+
+    .OPI-title h1 {
+        font-size: 30px !important;
+    }
+
+    .cards img {
         width: 100%;
     }
-    .cards{
+
+    .cards {
         width: 14rem;
         height: 23rem;
-     }
-     .cards h5{
+    }
+
+    .cards h5 {
         font-size: 18px !important;
-     }
-     .cards p{
+    }
+
+    .cards p {
         padding: 1% !important;
         font-size: 14px !important;
-     }
-     .get-involved h1{
+    }
+
+    .get-involved h1 {
         font-size: 30px !important;
-     }
-     .GI-contain h2{
+    }
+
+    .GI-contain h2 {
         font-size: 24px !important;
-     }
-     .GI-contain p{
-        font-size: 20px !important;
+    }
+
+    .GI-contain p {
+        font-size: 16px !important;
         text-align: justify !important;
         width: 100% !important;
-     }
-     .GI-contain img{
+    }
+
+    .GI-contain img {
         width: 50% !important;
-     }
-     .GI-span{
+    }
+
+    .GI-span {
         padding-left: 20%;
-     }
-     .GI-span-2{
+    }
+
+    .GI-span-2 {
         padding-left: 35%;
-     }
-     .board-members h1{
+    }
+
+    .board-members h1 {
         font-size: 30px !important;
-     }
-     .OBI-1{
+    }
+
+    .OBI-1 {
         padding-bottom: 5% !important;
-     }
-     .popup {
+    }
+
+    .popup {
         width: 95% !important;
         max-height: 80vh;
         padding: 2%;
     }
-     .OBI-1 img{
+
+    .OBI-1 img {
         width: 50% !important;
         height: 55% !important;
-     }
-     .OBI-1 h1{
+    }
+
+    .OBI-1 h1 {
         font-size: 16px !important;
-     }
-     .OBI-2 img{
+    }
+
+    .OBI-2 img {
         width: 90% !important;
         height: 65% !important;
-     }
-     .rahul-col img{
+    }
+
+    .rahul-col img {
         width: 40% !important;
         height: 65% !important;
-     }
-     .gokul-col img{
+    }
+
+    .gokul-col img {
         width: 80% !important;
         height: 70% !important;
-     }
+    }
+
+    .footer-logo-text {
+        font-size: 24px !important;
+    }
+    .mentor-img{
+        width: 70% !important;
+
+    }
+    .Our-B h1{
+        font-size: 24px !important;
+        padding-bottom: 12% !important;
+    }
+
+    
 
 
 
 }
 
 
- /* mobile Long  */
+/* mobile Long  */
 
-@media (max-width: 430px){
-    .logo{
+@media (max-width: 430px) {
+    .logo {
         width: 50% !important;
         padding-right: 5%;
     }
-    .navbar-toggler{
-        background-color: #9b1e1e !important;
+
+    .navbar-toggler {
+        background-color: #e7f5fe !important;
     }
+
     .collapse {
         align-items: center !important;
     }
+
     .navbar-collapse {
         display: flex;
         justify-content: flex-start !important;
-    } 
-    .cirpi_text{
+    }
+
+    .cirpi_text {
         font-size: 30px !important;
         display: block;
     }
+
     .cirpi-title {
         font-size: 24px !important;
         margin-bottom: 0 !important;
 
     }
+
     .hero-sub-title {
-        font-size: 8px; 
-        font-weight: bold; 
-        text-align: center; 
+        font-size: 8px;
+        font-weight: bold;
+        text-align: center;
         line-height: 1;
-        margin-top: 0 auto; 
+        margin-top: 0 auto;
     }
-    .intro-text p{
+
+    .intro-text p {
         font-size: 18px !important;
         padding-right: 10% !important;
         padding-bottom: 0% !important;
     }
 
-    .intro-head h1{
+    .intro-head h1 {
         font-size: 20px !important;
     }
-    .head{
+
+    .head {
         display: block;
         font-size: 20px !important;
     }
-    .intro-text p{
+
+    .intro-text p {
         font-size: 16px !important;
     }
-    .OG-title h5{
+
+    .OG-title h5 {
         font-size: 20px !important;
     }
-    .card-text{
+
+    .card-text {
         font-size: 16px !important;
     }
-    .card-title{
+
+    .card-title {
         font-size: 18px !important;
     }
-    .img-container p{
+
+    .img-container p {
         padding-right: 10% !important;
     }
-    .cartd{
+
+    .cartd {
         width: 19rem;
         height: 11rem;
     }
-    .g-3{
+
+    .g-3 {
         padding-left: 10% !important;
         padding-bottom: 5%;
     }
-    .OPE-title h1{
+
+    /* .OPE-title h1{
         font-size: 24px !important;
         padding: 2%;
     }
@@ -1558,261 +1740,583 @@ input {
     }
     .OPE-img{
         width: 70% !important;
-    }
-    .transprent_place{
+    } */
+    .transprent_place {
         min-height: 250px !important;
     }
-    .our-mission-text{
+
+    .transprent_place h1 {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        padding-top: 25% !important;
+        text-align: center;
+        font-size: 20px !important;
+    }
+
+    .tp-bright {
+        color: #6bcfff;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .our-mission-text {
         padding-right: 10% !important;
     }
-    .our-Mission h1{
+
+    .our-Mission h1 {
         font-size: 24px !important;
     }
+
+    .OVM-contain {
+        padding-right: 10% !important;
+    }
+
     .OM img {
         padding-top: 5%;
         width: 80% !important;
     }
+
     .img-container {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
     }
-    
+
     .OV-img {
         max-width: 100%;
         height: auto;
     }
-    .OVM-contain h1{
+
+    .OVM-contain {
+        padding: 0 !important;
+        padding-right: 10% !important;
+    }
+
+    .OVM-contain h1 {
         font-size: 20px !important;
+        padding: 0 !important;
     }
-    .OVM-contain p{
+
+    .our-Mission {
+        padding: 5% !important;
+    }
+
+    .OVM-contain p {
         font-size: 16px !important;
+        padding: 0 !important;
     }
-    .our-vision h1{
+
+    .our-vision h1 {
         font-size: 24px !important;
         padding-top: 10% !important;
         padding-bottom: 5% !important;
     }
-    .OV-text{
+
+    .OV-text {
         font-size: 16px !important;
     }
-     .OVR-contain  p{
+
+    .OVR-contain p {
         padding-bottom: 10% !important;
-     }
-     .OPI-title h1{
+    }
+
+    /* .OPI-title h1{
         font-size: 24px !important;
         padding-top: 5% !important;
         padding-bottom: 5% !important;
-     }
-     .card_col{
+     } */
+    .card_col {
         padding-bottom: 5% !important;
-     }
-     .popup {
-        width: 85% !important;
-        max-height: 80vh;
-        padding: 2%;
-    }
-    .board-members h1{
-        font-size: 24px !important;
-    }
-    .mentor-head{
-        font-size: 24px !important;
-        padding: 2% !important;
-    }
-    .OBI-1{
-        font-size: 20px !important;
-    }
-    .raghul-img{
-        padding-top: 5% !important;
-    }
-    .gokul-img{
-        padding-top: 10% !important;
-    }
-    .kaviya-img{
-        padding-top: 10% !important;
-    }
-    .support_img{
-        width: 50% !important;
-    }
-    .GI-text{
-        font-size: 16px !important;
-    }
-    .GI-head{
-        font-size: 18px !important;
-    }
-
-
-
-}
-
-
-/* 
-@media (min-width: 412px) and (max-width: 914px) {
-    .cirpi-title {
-        font-size: 2.5em;
-    }
-    .OPI-title h1 {
-        font-size: 24px !important;
-        font-weight: bold;
-        padding-bottom: 5%;
-        margin-top: 5%;
-
-    }
-    .cartd {
-        text-align: center !important;
-        margin-bottom: 10%;
-        margin-left: 5%;
-    }
-
-    .hero-sub-title {
-        font-size: 1.5em;
-    }
-
-    .intro-text p,
-    .OPE-section p,
-    .OM p,
-    .OV p,
-    .GI p {
-        font-size: 1.1em;
-    }
-
-    .OG-card1,
-    .OG-card2,
-    .OG-card3,
-    .OG-card4,
-    .OBI-1 {
-        width: 45%;
-        
-    }
-
-    .OPE-section img {
-        width: 50%;
     }
 
     .popup {
-        width: 80%;
-    }
-
-    .social_media_icon {
-        width: 200%;
-    }
-} 
-
-/* Tablet and Desktop Styles */
-/* @media (min-width: 769px) and (max-width: 769px){
-    .navbar-nav {
-        flex-direction: row;
-        align-items: center;
-        border-radius: 50px;
-    }
-
-    .nav-link {
-        font-size: 1.2em !important;
-        padding: 0.5rem 1rem;
-        text-align: left;
-    }
-
-    .collapse {
-        justify-content: center;
-    }
-
-    .logo {
-        width: 10% !important;
-        padding-left: 15%;
-    }
-
-    .hero {
+        width: 85% !important;
+        max-height: 80vh;
         padding: 5%;
     }
 
-    .cartd {
-        text-align: center !important;
-        margin-bottom: 10%;
+    .DF-name {
+        font-size: 18px !important;
     }
-.cartd img{
-    width: 100% !important;
+
+    .DF-Email {
+        font-size: 18px !important;
+    }
+
+    .DF-Mobile {
+        font-size: 18px !important;
+    }
+
+    .donate-btn {
+        margin-top: 15% !important;
+    }
+
+    .board-members h1 {
+        font-size: 24px !important;
+    }
+
+    .mentor-head {
+        font-size: 24px !important;
+        padding: 2% !important;
+    }
+
+    .OBI-1 h1 {
+        font-size: 16px !important;
+    }
+
+    .OBI-2 h1 {
+        font-size: 16px !important;
+    }
+
+    .Our-B h1 {
+        font-size: 16px;
+    }
+
+    .raghul-img {
+        padding-top: 5% !important;
+    }
+
+    .gokul-img {
+        padding-top: 10% !important;
+    }
+
+    .kaviya-img {
+        padding-top: 10% !important;
+    }
+
+    .support_img {
+        width: 60% !important;
+    }
+
+    .GI-text {
+        font-size: 12px !important;
+    }
+
+    .GI-head {
+        font-size: 18px !important;
+    }
+
+    .footer-logo-text {
+        font-size: 25px !important;
+        text-align: center;
+    }
+
+    .footer-logo {
+        padding-left: 25% !important;
+    }
+
+    .social-icons {
+        padding-left: 32% !important;
+    }
+
+    .contact-info h1 {
+        font-size: 30px !important;
+        padding-top: 5% !important;
+    }
+
+    .contact-info {
+        padding-top: 5% !important;
+    }
+
+    .tagline {
+        font-size: 14px !important;
+    }
+
+    .contact-info p {
+        font-size: 16px !important;
+    }
+
+    .intro_container {
+        padding-left: 7% !important;
+    }
+
+    .intro-text {
+        padding: 0% !important;
+    }
+
+    #popup_donate p {
+        font-size: 19px !important;
+    }
+
+    .nav-item {
+        font-size: 16px !important;
+    }
+
+    .OG-title {
+        padding: 5%;
+    }
+    .mentor-img{
+        width: 30% !important;
+    }
+
+    
 }
 
-    .intro-text,
-    .OPE-section p,
-    .OM p,
-    .mission-list,
-    .OVM-contain h1,
-    .our-mission-text,
-    .OVR-contain {
-        margin-left: 10%;
-        margin-right: 10%;
+@media (max-width: 380px) {
+    .logo {
+        width: 50% !important;
+        padding-right: 5%;
     }
 
-    .OG-card1,
-    .OG-card2,
-    .OG-card3,
-    .OG-card4,
-    .OBI-1 {
-        width: 100%;
-        display: inline-block;
+    .navbar-toggler {
+        background-color: #e7f5fe !important;
     }
 
-    .OPE-section {
-        flex-direction: row;
+    .collapse {
         align-items: center !important;
     }
 
-    .OPE-section img {
-        width: 35%;
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-start !important;
+    }
+
+    .cirpi_text {
+        font-size: 30px !important;
+        display: block;
+    }
+
+    .cirpi-title {
+        font-size: 24px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .intro_container {
+        padding-left: 10% !important;
+    }
+
+    .intro-text {
+        padding: 1%;
+        color: #003257;
+        text-align: justify;
+        margin-left: 10% !important;
+    }
+
+    .hero-sub-title {
+        font-size: 7px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        margin-top: 0 auto;
+    }
+
+    .intro-text p {
+        font-size: 18px !important;
+        padding-right: 12% !important;
+        padding-bottom: 0% !important;
+    }
+
+    .intro-head h1 {
+        font-size: 20px !important;
+    }
+
+    .head {
+        display: block;
+        font-size: 20px !important;
+    }
+
+    .intro-text p {
+        font-size: 16px !important;
+    }
+
+    .OG-title h1 {
+        font-size: 24px !important;
+    }
+
+    .card-text {
+        font-size: 16px !important;
+    }
+
+    .card-title {
+        font-size: 18px !important;
+    }
+
+    .img-container p {
+        padding-right: 12% !important;
+    }
+
+    .cartd {
+        width: 19rem;
+        height: 11rem;
+    }
+
+    .g-3 {
+        padding-left: 5% !important;
+        padding-bottom: 15% !important;
+    }
+
+    .transprent_place h1 {
+        font-size: 25px !important;
+    }
+
+    .intro_container {
+        padding-left: 5% !important;
+    }
+
+    .intro-text {
+        padding: 0% !important;
+    }
+
+    .GI-head {
+        font-size: 16px !important;
+    }
+
+    .GI-text {
+        font-size: 11px !important;
+    }
+
+    #popup_donate p {
+        font-size: 19px !important;
     }
 
     .popup {
-        width: 50%;
+        width: 85% !important;
+        max-height: 80vh;
+        padding: 5%;
     }
 
-    .footer-sub-logos {
-        flex-direction: row;
+    .DF-name {
+        font-size: 16px !important;
+    }
+
+    .DF-Email {
+        font-size: 16px !important;
+    }
+
+    .DF-Mobile {
+        font-size: 16px !important;
+    }
+
+    .nav-item {
+        font-size: 14px !important;
+    }
+
+    #popup_donate h1 {
+        font-size: 18px !important;
+    }
+
+    #popup_donate p {
+        font-size: 16px !important;
+    }
+    .board-members{
+        padding-top: 10% !important;
+        font-size: 20px !important;
+    }
+    .raghul-img{
+        width: 70% !important;
+    }
+    .gokul-img{
+        width: 70% !important;
+    }
+    .kaviya-img{
+        width: 70% !important;
+    }
+
+    
+
+
+    
+
+}
+
+@media (max-width: 320px) {
+    .logo {
+        width: 60% !important;
+        padding-right: 5%;
+    }
+
+    .navbar-toggler {
+        background-color: #e7f5fe !important;
+    }
+
+    .nav-item {
+        font-size: 14px !important;
+    }
+
+    .collapse {
+        align-items: center !important;
+        width: 10% !important;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-start !important;
+
+    }
+
+    .cirpi_text {
+        font-size: 30px !important;
+        display: block;
+    }
+
+    .cirpi-title {
+        font-size: 20px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .intro_container {
+        padding-left: 1% !important;
+    }
+
+    .intro-text {
+        padding: 1%;
+        color: #003257;
+        text-align: justify;
+        margin-left: 10% !important;
+    }
+
+    .hero-sub-title {
+        font-size: 6px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1;
+        margin-top: 0 auto;
+    }
+
+    .intro-text p {
+        font-size: 18px !important;
+        padding-right: 12% !important;
+        padding-bottom: 0% !important;
+    }
+
+    .intro-head {
+        font-size: 18px !important;
+        padding-left: 8% !important;
+    }
+
+    .head {
+        font-size: 18px !important;
+    }
+
+    .intro-text p {
+        font-size: 14px !important;
+        padding-right: 8% !important;
+        padding-bottom: 0% !important;
+    }
+
+    .OG-title h1 {
+        font-size: 20px !important;
+    }
+    .OG-title {
+        padding-top: 5% !important;
+    }
+    .cartd {
+        width: 16rem;
+        height: 10rem;
+    }
+
+    .card-title {
+        font-size: 16px !important;
+    }
+
+    .card-text {
+        font-size: 14px !important;
+    }
+
+    .our-vision h1 {
+        font-size: 20px !important;
+    }
+
+    .OV-text {
+        font-size: 14px !important;
+    }
+
+    .transprent_place {
+        min-height: 250px !important;
+    }
+
+    .transprent_place h1 {
+        font-size: 20px !important;
+    }
+
+    .tp-bright {
+        color: #6bcfff;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .our-mission-text {
+        padding-right: 10% !important;
+    }
+
+    .our-Mission h1 {
+        font-size: 20px !important;
+    }
+
+    .OVM-contain {
+        padding-left: 1% !important;
+    }
+
+    .OM img {
+        padding-top: 5%;
+        width: 80% !important;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
         align-items: center;
-        margin-left: 15% !important;
-        position: absolute;
+        width: 100%;
+        margin-bottom: 40px;
     }
 
-    .footer-sub-logos img {
-        width: 55%;
-        margin-bottom: 0;
+    .OV-img {
+        max-width: 100%;
+        height: auto;
     }
 
-    .sub-footer {
-        position: absolute;
-        left: 15%;
-        width: auto;
-        padding: 1rem;
-        margin-top: 2rem;
-        border-radius: 5px;
+    .OVM-contain {
+        padding: 0 !important;
+        padding-right: 10% !important;
     }
 
-    .social_icon {
-        flex-direction: row;
-        justify-content: end;
-        padding-top: 1rem;
-        margin-top: 1rem;
-        gap: 50px !important;
+    .OVM-contain h1 {
+        font-size: 16px !important;
+        padding: 0 !important;
+        padding-bottom: 5% !important;
     }
 
-    .insta_icon {
-        margin-left: 85%;
-        width: 30%;
+    .our-Mission {
+        padding: 5% !important;
     }
 
-    .social_media_icon {
-        width: 250%;
+    .OVM-contain p {
+        font-size: 14px !important;
+        padding: 0 !important;
     }
 
-    .foot_logo {
-        width: 65%;
-        padding-top: 20%;
+    .popup {
+        width: 85% !important;
+        max-height: 80vh;
+        padding: 5%;
     }
 
-    .foot_message {
-        margin-top: 15%;
-        font-size: 1em;
+    .DF-name {
+        font-size: 16px !important;
     }
-} */
+
+    .DF-Email {
+        font-size: 16px !important;
+    }
+
+    .DF-Mobile {
+        font-size: 16px !important;
+    }
+    .board-members{
+        padding-top: 10% !important;
+        font-size: 20px !important;
+    }
+    .raghul-img{
+        width: 70% !important;
+    }
+    .gokul-img{
+        width: 70% !important;
+    }
+    .kaviya-img{
+        width: 70% !important;
+    }
+
+    
+
+
+}
