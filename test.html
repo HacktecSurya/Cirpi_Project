@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <style>
+        /* Default: 4 mentors per row (for laptops & tablets) */
+        .mentor-card {
+            text-align: center;
+            padding: 15px;
+        }
+        
+        /* 1 mentor per row for small screens (mobile) */
+        @media (max-width: 425px) {
+            .mentor-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 380px) {
+            .mentor-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 320px) {
+            .mentor-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        </style>
+</head>
+<body>
+    <div class="container-fluid section our-board">
+        <div class="board-members">
+            <h1 class="mentor-head">Our Mentors</h1>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid mentor-img">
+                                <h1>Ms Preethi</h1>
+                                <p>Dell, Bangalore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
+                                <h1>Mr Srinivasan</h1>
+                                <p>Lions Club, Tambaram</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Arumugam" class="img-fluid mentor-img">
+                                <h1>Mr Arumugam</h1>
+                                <p>TN Govt School Teacher</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid mentor-img">
+                                <h1>Mr Saravanan</h1>
+                                <p>Accenture, Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr Yoga Balaji</h1>
+                                <p>MuSigma, Bangalore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Ms RajaLakshmi</h1>
+                                <p>-------</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                                <h1>Mr Jijith Kumar</h1>
+                                <p>Senior Bailiff, Coimbatore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
+                                <h1>Ms Shamyuktha</h1>
+                                <p>Titan, Hosur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    
+</body>
+</html>

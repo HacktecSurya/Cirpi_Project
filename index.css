@@ -646,19 +646,28 @@ html {
 
 .transprent_place {
     /* padding: 10%; */
-    background-image: url("/images/children2.png");
-    min-height: 500px;
+    background-image: url("/images/dark.jpeg");
+    min-height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.transprent_place h1{
+    color: #b0dcf1;
+    text-align: center;
+    padding-top: 9%;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Pacifico', cursive;
+}
+
 
 .GI {
     background-color: white;
     display: block;
     place-items: center;
-    margin-top: 5%;
 
 
 }
@@ -1656,8 +1665,8 @@ input {
     }
 
     .cartd {
-        width: 19rem;
-        height: 11rem;
+        width: 19rem !important;
+        height: 11rem !important;
     }
 
     .g-3 {
@@ -1680,15 +1689,16 @@ input {
         width: 70% !important;
     } */
     .transprent_place {
-        min-height: 250px !important;
+        min-height: 230px !important;
     }
 
     .transprent_place h1 {
         font-family: 'Dancing Script', cursive;
         color: white;
-        padding-top: 25% !important;
+        padding-top: 20% !important;
         text-align: center;
-        font-size: 20px !important;
+        font-size: 24px !important;
+        padding: 1% ;
     }
 
     .tp-bright {
@@ -2069,33 +2079,25 @@ input {
     
 
 }
- /* smallmobile */
+
+/* Small Mobile  */
+
 @media (max-width: 320px) {
-    body{
-        overflow-x: hidden !important;
-    }
     .logo {
-        width: 60% !important;
+        width: 50% !important;
         padding-right: 5%;
     }
-
     .navbar-toggler {
         background-color: #e7f5fe !important;
     }
 
-    .nav-item {
-        font-size: 14px !important;
-    }
-
     .collapse {
         align-items: center !important;
-        width: 10% !important;
     }
 
     .navbar-collapse {
         display: flex;
         justify-content: flex-start !important;
-
     }
 
     .cirpi_text {
@@ -2104,16 +2106,16 @@ input {
     }
 
     .cirpi-title {
-        font-size: 20px !important;
+        font-size: 21px !important;
         margin-bottom: 0 !important;
     }
-
+    
     .intro_container {
-        padding-left: 1% !important;
+        /* padding-left: 10% !important; */
     }
 
     .intro-text {
-        padding: 1%;
+        /* padding: 1% !important; */
         color: #003257;
         text-align: justify;
         margin-left: 10% !important;
@@ -2123,7 +2125,7 @@ input {
         font-size: 6px;
         font-weight: bold;
         text-align: center;
-        line-height: 1;
+        line-height: 0;
         margin-top: 0 auto;
     }
 
@@ -2133,109 +2135,38 @@ input {
         padding-bottom: 0% !important;
     }
 
-    .intro-head {
-        font-size: 18px !important;
-        padding-left: 8% !important;
+    .intro-head h1 {
+        font-size: 20px !important;
+        padding-top: 5% !important;
+        padding-bottom: 5% !important;
     }
 
     .head {
+        display: block;
         font-size: 18px !important;
     }
 
     .intro-text p {
-        font-size: 14px !important;
-        padding-right: 8% !important;
-        padding-bottom: 0% !important;
+        font-size: 16px !important;
+    }
+    .GI-head {
+        font-size: 16px !important;
     }
 
-    .OG-title h1 {
-        font-size: 20px !important;
-    }
-    .OG-title {
-        padding-top: 5% !important;
+    .GI-text {
+        font-size: 11px !important;
     }
     .cartd {
-        width: 16rem;
-        height: 10rem;
-    }
+        width: 18rem !important;
+        height: 11rem !important;
 
-    .card-title {
-        font-size: 16px !important;
     }
-
-    .card-text {
-        font-size: 14px !important;
+    .g-3 {
+        padding-left: 0% !important;
+        padding-bottom: 15% !important;
     }
-
-    .our-vision h1 {
-        font-size: 20px !important;
-    }
-
-    .OV-text {
-        font-size: 14px !important;
-    }
-
-    .transprent_place {
-        min-height: 250px !important;
-    }
-
-    .transprent_place h1 {
-        font-size: 20px !important;
-    }
-
-    .tp-bright {
-        color: #6bcfff;
-        font-family: 'Dancing Script', cursive;
-    }
-
-    .our-mission-text {
-        padding-right: 10% !important;
-    }
-
-    .our-Mission h1 {
-        font-size: 20px !important;
-    }
-
-    .OVM-contain {
-        padding-left: 1% !important;
-    }
-
-    .OM img {
-        padding-top: 5%;
-        width: 80% !important;
-    }
-
-    .img-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 40px;
-    }
-
-    .OV-img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .OVM-contain {
-        padding: 0 !important;
-        padding-right: 10% !important;
-    }
-
-    .OVM-contain h1 {
-        font-size: 16px !important;
-        padding: 0 !important;
-        padding-bottom: 5% !important;
-    }
-
-    .our-Mission {
-        padding: 5% !important;
-    }
-
-    .OVM-contain p {
-        font-size: 14px !important;
-        padding: 0 !important;
+    #popup_donate p {
+        font-size: 19px !important;
     }
 
     .popup {
@@ -2255,21 +2186,70 @@ input {
     .DF-Mobile {
         font-size: 16px !important;
     }
-    .board-members{
-        padding-top: 10% !important;
-        font-size: 20px !important;
+    .OV-text{
+        font-size: 10px !important;
     }
-    .raghul-img{
-        width: 70% !important;
-    }
-    .gokul-img{
-        width: 70% !important;
-    }
-    .kaviya-img{
-        width: 70% !important;
+    .GI-head {
+        font-size: 1px !important;
     }
 
-    
+    .GI-text {
+        font-size: 1px !important;
+    }
 
+    .footer-logo-text {
+        font-size: 21px !important;
+        text-align: center;
+    }
+
+    .footer-logo {
+        padding-left: 15% !important;
+        width: 80% !important;
+    }
+
+    .social-icons {
+        padding-left: 25% !important;
+    }
+
+    .contact-info h1 {
+        font-size: 30px !important;
+        padding-top: 5% !important;
+    }
+
+    .contact-info {
+        padding-top: 5% !important;
+    }
+
+    .tagline {
+        font-size: 14px !important;
+    }
+
+    .contact-info p {
+        font-size: 14px !important;
+    }
 
 }
+
+
+
+/* 
+@media (max-width: 425px) {
+    .mentor-card {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .mentor-card {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .mentor-card {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+} */
