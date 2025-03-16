@@ -39,7 +39,7 @@ document.getElementById("donationForm").addEventListener("submit", function (eve
 });
 
 function storeDataInGoogleSheets(name, email, mobile) {
-    const scriptURL = "https://script.google.com/macros/s/AKfycbxCGxzj7_roiiyF5Fc6j8WM2Y5RsUZGqLRsbwjPvLxGMZbrFnyUw0KPmMzNuNv3jW4cDA/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzQ1tNA59sm15P6bjjN6d5xhVsZeUsWuN46hOyym4pBLARzYlWKp2W5ML76DTyZmX5e8g/exec";
 
     fetch(scriptURL, {
         method: "POST",
@@ -135,5 +135,45 @@ document.addEventListener("DOMContentLoaded", function () {
 //             $(".owl-item .card").css("width", "260px");
 //             $(".owl-item.active.center .card").css("width", "320px"); 
 //         }
-//     });
-// });
+//     });
+// });
+
+
+// volunteer form
+// Handle volunteer form submission
+document.querySelector(".volunteer-form").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("volunteer-name").value.trim();
+    const email = document.getElementById("volunteer-email").value.trim();
+    const phone = document.getElementById("volunteer-phone").value.trim();
+
+    if (!name || !email || !phone) {
+        alert("Please fill in all fields before submitting.");
+        return;
+    }
+
+    storeVolunteerData(name, email, phone); 
+});
+
+function storeVolunteerData(name, email, phone) {
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzKE0Z_-AV_jsNhEGHo_6AGTDwWCeYNfVer4FRhX--DTnaOzB6aRnBYtQwhGZBJWh88/exec";
+    
+    fetch(scriptURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, mobile: phone }),
+        mode: "no-cors"
+    })
+    .then(() => {
+        alert("Volunteer details submitted successfully!");
+        resetVolunteerForm();
+    })
+    .catch(error => console.error("Error:", error));
+}
+
+function resetVolunteerForm() {
+    setTimeout(() => {
+        document.querySelector(".volunteer-form").reset();
+    }, 3000);
+}

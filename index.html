@@ -26,7 +26,8 @@
     <!-- <link rel="stylesheet" href="test5.css"> -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+<!-- boodstrap donate button  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- jQuery -->
@@ -102,7 +103,6 @@
             <button class="donate-btn" onclick="closePopup('popup_donate')">Close</button>
         </div>
         
-
         <!-- <button class="donate-btn"><img src="/images/donate_btn.png" alt="donate button"></button> -->
         <!-- <a href="#"><img src="images/donate-img.png" class="donate-btn" alt="donate button"></a> -->
     </nav>
@@ -123,39 +123,44 @@
                 </p>
             </div>
         </section>
+        <div class="d-flex justify-content-center align-items-center">
+            <button class="blink-donate-btn fixed-donate-btn" onclick="openPopup('popup_donate')">
+                <i class="fas fa-hand-holding-heart"></i> 
+            </button>
+        </div>
+        <!-- Volunteer Button -->
+<button class="donate-btn" onclick="openPopup('popup_volunteer')">Become a Volunteer</button>
+
+<!-- Volunteer Popup -->
+<div class="popup" id="popup_volunteer">
+    <div class="intro-head">
+        <h1>Join as a Volunteer</h1>
+        <p>Fill in the details to become a part of CIRPI Educational Foundation.</p>
     </div>
 
-    <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
-        <div class="logos overflow-hidden py-5 px-0 position-relative"
-            style="background-color: #fff; white-space: nowrap;">
-            <div class="logos-slide d-inline-block">
+    <div class="volunteer-container">
+        <h2 class="volunteer-heading">Join as a Volunteer</h2>
+        <p class="volunteer-subtext">Fill in the details to become a part of CIRPI Educational Foundation.</p>
+        
+        <form class="volunteer-form">
+            <label for="volunteer-name" class="volunteer-label">Name:</label>
+            <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name" required>
 
-                <img src="/images/num-1.webp" alt="num-1">
+            <label for="volunteer-email" class="volunteer-label">Email:</label>
+            <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email" required>
 
-                
-                <img class="caros-img" src="/images/num-2.webp" alt="num-2">
-                <img class="caros-img" src="/images/num-3.webp" alt="num-3">
-                <img class="caros-img" src="/images/num-4.webp" alt="num-4">
-                <img src="/images/num-5.webp" alt="num-5">
-                <img src="/images/num-6.webp" alt="num-6">
-                <img src="/images/num-7.webp" alt="num-7">
-                <img src="/images/num8.webp" alt="num-8">
-                <img src="/images/num-9.webp" alt="num-9">
-                <img src="/images/num-10.webp" alt="num-10">
-                               
-                <img src="/images/num-2.webp" alt="num-2">
-                <img src="/images/num-3.webp" alt="num-3">
-                <img src="/images/num-4.webp" alt="num-4">
-                <img src="/images/num-5.webp" alt="num-5">
-                <img src="/images/num-6.webp" alt="num-6">
-                <img src="/images/num-7.webp" alt="num-7">
-                <img src="/images/num8.webp" alt="num-8">
-                <img src="/images/num-9.webp" alt="num-9">
-                <img src="/images/num-10.webp" alt="num-10">
-               
-            </div>
-        </div>
-    </main> -->
+            <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
+            <input type="tel" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number" required>
+
+            <button type="submit" class="volunteer-submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <button class="donate-btn" onclick="closePopup('popup_volunteer')">Close</button>
+</div>
+
+
+    </div>
 
     <div class="container-fluid section intro_container">
         <div class="row">
@@ -193,6 +198,37 @@
                     alt=""> </div>
         </div>
     </div>
+        <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
+        <div class="logos overflow-hidden py-5 px-0 position-relative"
+            style="background-color: #fff; white-space: nowrap;">
+            <div class="logos-slide d-inline-block">
+
+                <img src="/images/num-1.webp" alt="num-1">
+
+                
+                <img class="caros-img" src="/images/num-2.webp" alt="num-2">
+                <img class="caros-img" src="/images/num-3.webp" alt="num-3">
+                <img class="caros-img" src="/images/num-4.webp" alt="num-4">
+                <img src="/images/num-5.webp" alt="num-5">
+                <img src="/images/num-6.webp" alt="num-6">
+                <img src="/images/num-7.webp" alt="num-7">
+                <img src="/images/num8.webp" alt="num-8">
+                <img src="/images/num-9.webp" alt="num-9">
+                <img src="/images/num-10.webp" alt="num-10">
+                               
+                <img src="/images/num-2.webp" alt="num-2">
+                <img src="/images/num-3.webp" alt="num-3">
+                <img src="/images/num-4.webp" alt="num-4">
+                <img src="/images/num-5.webp" alt="num-5">
+                <img src="/images/num-6.webp" alt="num-6">
+                <img src="/images/num-7.webp" alt="num-7">
+                <img src="/images/num8.webp" alt="num-8">
+                <img src="/images/num-9.webp" alt="num-9">
+                <img src="/images/num-10.webp" alt="num-10">
+               
+            </div>
+        </div>
+    </main> -->
 
     <div class="container-fluid section OG">
         <div class="row">
@@ -258,6 +294,7 @@
             </div>
         </div>
     </div>
+
     <div class="Our-Vission">
         <div class="container-fluid section OV">
             <div class="our-vision ">
@@ -350,7 +387,6 @@
         </div>
 
     </div>
-
 
     <div id="about-us" class="container-fluid section our-board">
         <div class="container">
@@ -572,8 +608,8 @@
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
-                                <h1>Ms RajaLakshmi</h1>
-                                <p>-------</p>
+                                <h1>Ms Shiva Kumar</h1>
+                                <p>Hope3</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
@@ -600,7 +636,6 @@
             </button>
         </div>
     </div>
-
 
     <div id="get-involved" class="container-fluid GI GI-contain">
         <div class="get-involved">
