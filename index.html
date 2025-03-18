@@ -20,20 +20,20 @@
     <!-- FOR contact us logos  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- Include Owl Carousel and jQuery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
     <!-- <link rel="stylesheet" href="test5.css"> -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<!-- boodstrap donate button  -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- boodstrap donate button  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <!-- Remove this line -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 
 
     <!-- Owl Carousel JavaScript -->
@@ -43,6 +43,7 @@
     <!-- https://script.google.com/macros/s/AKfycbzBGSxageT-5FXJr_vN3npFqCho5udbXVy--RG1jW5ElaB0gGb8bQcyXz8seGHpYT8/exec -->
 
     <!-- AKfycbzBGSxageT-5FXJr_vN3npFqCho5udbXVy--RG1jW5ElaB0gGb8bQcyXz8seGHpYT8 -->
+
 
 </head>
 
@@ -67,7 +68,7 @@
 
                 <li><button class="donate-btn ms-auto" onclick="openPopup('popup_donate')">Donate</button></li>
                 <!-- <li><button class=" donate-btn ms-auto">Donate</button></li> -->
-                
+
             </ul>
 
         </div>
@@ -78,20 +79,20 @@
                 <h1>Support CIRPI Educational Foundation</h1>
                 <p>Your donation helps us provide educational resources and mentorship.</p>
             </div>
-        
+
             <form class="donation-form" id="donationForm">
                 <label class="DF-name" for="donorName">Name:</label>
                 <input type="text" id="donorName" name="donorName" required>
-        
+
                 <label class="DF-Email" for="donorEmail">Email:</label>
                 <input type="email" id="donorEmail" name="donorEmail" required>
-        
+
                 <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
                 <input type="text" id="donorMobile" name="donorMobile" required>
-        
+
                 <button type="submit" class="donate-btn">Proceed to Donate</button>
             </form>
-        
+
             <div id="qrSection" style="display: none;">
                 <div class="intro-head">
                     <h1 class="scan-txt">Scan to Donate</h1>
@@ -99,10 +100,10 @@
                 <img class="QR-img" src="/images/QR.webp" id="qrCode" alt="QR Code">
                 <p id="countdown"></p>
             </div>
-        
+
             <button class="donate-btn" onclick="closePopup('popup_donate')">Close</button>
         </div>
-        
+
         <!-- <button class="donate-btn"><img src="/images/donate_btn.png" alt="donate button"></button> -->
         <!-- <a href="#"><img src="images/donate-img.png" class="donate-btn" alt="donate button"></a> -->
     </nav>
@@ -125,39 +126,45 @@
         </section>
         <div class="d-flex justify-content-center align-items-center">
             <button class="blink-donate-btn fixed-donate-btn" onclick="openPopup('popup_donate')">
-                <i class="fas fa-hand-holding-heart"></i> 
+                <i class="fas fa-hand-holding-heart"></i>
             </button>
         </div>
         <!-- Volunteer Button -->
-<button class="donate-btn" onclick="openPopup('popup_volunteer')">Become a Volunteer</button>
+        <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
+            <i class="fa-solid fa-users"></i>
+            <span class="volunteer-text">VOLUNTEER</span>
+        </div>
 
-<!-- Volunteer Popup -->
-<div class="popup" id="popup_volunteer">
-    <div class="intro-head">
-        <h1>Join as a Volunteer</h1>
-        <p>Fill in the details to become a part of CIRPI Educational Foundation.</p>
-    </div>
+        <!-- Volunteer Popup -->
+        <div class="popup" id="popup_volunteer">
+            <div class="intro-head">
+                <h1>Join as a Volunteer</h1>
+                <p>Fill in the details to become a part of CIRPI Educational Foundation.</p>
+            </div>
 
-    <div class="volunteer-container">
-        <h2 class="volunteer-heading">Join as a Volunteer</h2>
-        <p class="volunteer-subtext">Fill in the details to become a part of CIRPI Educational Foundation.</p>
-        
-        <form class="volunteer-form">
-            <label for="volunteer-name" class="volunteer-label">Name:</label>
-            <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name" required>
+            <div class="volunteer-container">
+                <h2 class="volunteer-heading">Join as a Volunteer</h2>
+                <p class="volunteer-subtext">Fill in the details to become a part of CIRPI Educational Foundation.</p>
 
-            <label for="volunteer-email" class="volunteer-label">Email:</label>
-            <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email" required>
+                <form class="volunteer-form">
+                    <label for="volunteer-name" class="volunteer-label">Name:</label>
+                    <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name"
+                        required>
 
-            <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
-            <input type="tel" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number" required>
+                    <label for="volunteer-email" class="volunteer-label">Email:</label>
+                    <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email"
+                        required>
 
-            <button type="submit" class="volunteer-submit-btn">Submit</button>
-        </form>
-    </div>
+                    <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
+                    <input type="tel" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number"
+                        required>
 
-    <button class="donate-btn" onclick="closePopup('popup_volunteer')">Close</button>
-</div>
+                    <button type="submit" class="volunteer-submit-btn">Submit</button>
+                </form>
+            </div>
+
+            <button class="donate-btn" onclick="closePopup('popup_volunteer')">Close</button>
+        </div>
 
 
     </div>
@@ -192,13 +199,13 @@
 
                         Join us on our mission to shape brighter futures, one student at a time.
                     </p>
-                </div>  
+                </div>
             </div>
             <div class="col-xl-6 col-md-12 col-sm-12  img-container"> <img class="Intro-img" src="/images/sample.webp"
                     alt=""> </div>
         </div>
     </div>
-        <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
+    <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
         <div class="logos overflow-hidden py-5 px-0 position-relative"
             style="background-color: #fff; white-space: nowrap;">
             <div class="logos-slide d-inline-block">
@@ -301,7 +308,8 @@
                 <h1>Our Vision</h1>
             </div>
             <div class="container-fluid OVR-contain">
-                <p class="OV-text" >At Cirpi Educational Foundation, we envision a world where every student, regardless of their
+                <p class="OV-text">At Cirpi Educational Foundation, we envision a world where every student, regardless
+                    of their
                     background,
                     has access to quality education, hands-on learning, and career-building opportunities. By
                     bridging
@@ -323,7 +331,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- <div class="container-fluid section OPE">
         <div class="container-fluid OPE-section"> 
             <div class="row">
@@ -574,11 +582,11 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center text-center">
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid mentor-img">
-                                <h1>Ms Preethi</h1>
-                                <p>Dell, Bangalore</p>
+                                <h1>Ms Shiva Kumar</h1>
+                                <p>Hope3</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
@@ -600,16 +608,18 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center text-center">
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
-                                <h1>Mr Yoga Balaji</h1>
-                                <p>MuSigma, Bangalore</p>
+                                
+                                <h1>Ms Preethi</h1>
+                                <p>Dell, Bangalore</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
-                                <h1>Ms Shiva Kumar</h1>
-                                <p>Hope3</p>
+
+                                <h1>Mr Yoga Balaji</h1>
+                                <p>MuSigma, Bangalore</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
@@ -645,16 +655,18 @@
             <div class="col-6 vol-col text-center">
                 <img class="support_img" src="/images/volunteer.png" alt="volunteer_img">
                 <h2 class="GI-head">Volunteer With Us</h2>
-                <p class="GI-text" >Offer your skills and time to mentor students or contribute to educational programs. Sharing
+                <p class="GI-text">Offer your skills and time to mentor students or contribute to educational programs.
+                    Sharing
                     knowledge can inspire and empower learners, creating a positive impact on their academic <span
                         class="GI-span"> and
                         personal growth</span></p>
             </div>
-            
+
             <div class="col-6 text-center">
                 <img class="support_img" src="/images/support.png" alt="support_img">
-                <h2 class="GI-head" >Support With Us</h2>
-                <p class="GI-text" >Make a difference today by contributing to education programs. Your support creates learning
+                <h2 class="GI-head">Support With Us</h2>
+                <p class="GI-text">Make a difference today by contributing to education programs. Your support creates
+                    learning
                     opportunities for students in need. Together, we can shape a brighter future and inspire the
                     next <span class="GI-span-2">generation.</span></p>
             </div>

@@ -93,22 +93,22 @@ function resetForm() {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    let items = document.querySelectorAll(".carousel .carousel-item");
+// document.addEventListener("DOMContentLoaded", function () {
+//     let items = document.querySelectorAll(".carousel .carousel-item");
 
-    items.forEach((el) => {
-        let minPerSlide = window.innerWidth <= 425 ? 2 : 4; // 2 items for mobile, 4 for larger screens
-        let next = el.nextElementSibling;
-        for (var i = 1; i < minPerSlide; i++) {
-            if (!next) {
-                next = items[0];
-            }
-            let cloneChild = next.firstElementChild.cloneNode(true);
-            el.appendChild(cloneChild.children[0]);
-            next = next.nextElementSibling;
-        }
-    });
-});
+//     items.forEach((el) => {
+//         let minPerSlide = window.innerWidth <= 425 ? 2 : 4; // 2 items for mobile, 4 for larger screens
+//         let next = el.nextElementSibling;
+//         for (var i = 1; i < minPerSlide; i++) {
+//             if (!next) {
+//                 next = items[0];
+//             }
+//             let cloneChild = next.firstElementChild.cloneNode(true);
+//             el.appendChild(cloneChild.children[0]);
+//             next = next.nextElementSibling;
+//         }
+//     });
+// });
 
 // $(document).ready(function(){
 //     $(".owl-carousel").owlCarousel({
