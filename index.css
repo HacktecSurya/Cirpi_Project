@@ -220,8 +220,8 @@ html {
 }
 
 .logo {
-    width: 40% !important;
-    padding-left: 15%;
+    width: 100% !important;
+    padding-left: 25%;
 }
 
 .navbar-nav {
@@ -241,34 +241,79 @@ html {
     transform: scale(1);
     border-radius: 8px;
     margin-left: auto; 
+    -webkit-animation: donate-glow 1500ms infinite;
+    animation: donate-glow 1500ms infinite;
+}
+@keyframes donate-glow {
+    0% { background-color: #003257; box-shadow: 0 0 3px #003257; }
+    50% { background-color: #003f6e; box-shadow: 0 0 40px #003f6e; }
+    100% { background-color: #00508d; box-shadow: 0 0 3px #00508d; }
 }
 
-.blink-donate-btn {
-    background-color: #004A7F;
+
+
+
+.fixed-donate-btn {
+    position: fixed;
+    background-color: #e43e00;
+    color: white;
     border: none;
-    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    /* display: inline-block; */
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    /* padding: 15px 25px; */
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    transition: width 0.3s ease, padding 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
     -webkit-animation: glowing 1500ms infinite;
     animation: glowing 1500ms infinite;
 }
 
-@keyframes glowing {
-    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+/* Icon Always Visible */
+.fixed-donate-btn i {
+    font-size: 24px;
+    transition: margin 0.3s ease;
 }
+
+/* Initially Hide Text */
+.donate-text {
+    opacity: 0;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+    display: none;
+}
+
+/* Hover Effect - Expand Button */
+.fixed-donate-btn:hover {
+    width: 170px;
+    padding: 0 20px;
+    justify-content: flex-start;
+}
+
+/* Show Text on Hover */
+.fixed-donate-btn:hover .donate-text {
+    opacity: 1;
+    display: inline;
+}
+
+/* Move Icon on Hover */
+.fixed-donate-btn:hover i {
+    margin-right: 10px;
+}
+
 
 .fixed-donate-btn {
     position: fixed;
-    bottom:70% !important; /* Places the button closer to the bottom */
-    left: 20px !important;
+    bottom:60% !important; /* Places the button closer to the bottom */
+    right: 0% !important;
     z-index: 1000 !important; /* Keeps it above other elements */
     margin: 0; /* Ensures no extra spacing */
     padding: 0;
@@ -374,9 +419,13 @@ html {
     color: #003257;
     text-align: justify;
     margin-left: 10%;
+    margin-bottom: 0%;
 }
-.Intro-img{
-    width: 50%;
+.Intro-img {
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 5%;
+    margin-top: 0% !important;
 }
 
 .intro-text p {
@@ -385,26 +434,38 @@ html {
 .car-img{
     width: 85% !important;
 }
-/* Volunteer Button */
+/* /* Volunteer Button */
 .volunteer-btn {
     position: fixed;
     bottom: 50%;
-    left: 1%;
+    /* left: 1.5%; */
+    right: 0%;
     background-color: #e43e00;
     color: white;
     border: none;
     width: 60px;
-    height: 60px;
-    border-radius: 30px;
+    height: 60px;    
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: width 0.3s ease, padding 0.3s ease;
+    transition: width 0.3s ease, padding 0.3s ease, transform 0.3s ease;
     overflow: hidden;
     padding: 0;
+    white-space: nowrap;
+    -webkit-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+
+/* Glowing Effect (Same as Donate Button) */
+@keyframes glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
 
 /* Icon Always Visible */
@@ -416,15 +477,15 @@ html {
 /* Initially Hide Text */
 .volunteer-text {
     opacity: 0;
-    white-space: nowrap;
     font-size: 16px;
     margin-left: 10px;
     transition: opacity 0.3s ease;
+    display: none;
 }
 
 /* Hover Effect - Expand Button */
 .volunteer-btn:hover {
-    width: 160px;
+    width: 170px;
     padding: 0 20px;
     justify-content: flex-start;
 }
@@ -432,6 +493,7 @@ html {
 /* Show Text on Hover */
 .volunteer-btn:hover .volunteer-text {
     opacity: 1;
+    display: inline;
 }
 
 /* Move Icon on Hover */
@@ -441,7 +503,7 @@ html {
 
 
 .fixed-volunteer-btn {
-    position: fixed;
+    position: fixed !important;
     bottom:50% !important; /* Places the button closer to the bottom */
     left: 20px !important;
     z-index: 1000 !important; /* Keeps it above other elements */
@@ -450,7 +512,8 @@ html {
 }
 /* Heading and Subtext */
 .volunteer-heading {
-    font-size: 24px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-weight: bold;
     color: #0d2c40;
 }
@@ -462,27 +525,6 @@ html {
 }
 
 /* Form Styling */
-.volunteer-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.volunteer-label {
-    font-weight: bold;
-    text-align: left;
-    width: 100%;
-    margin-top: 10px;
-}
-
-.volunteer-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
 .volunteer-radio-group {
     display: flex;
@@ -506,7 +548,8 @@ html {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
-    width: 100%;
+    margin-left: 20px;
+    width: 50% !important;
 }
 
 .volunteer-submit-btn:hover {
@@ -650,7 +693,6 @@ html {
 }
 
 .our-vision {
-    padding-top: 1%;
     font-family: Georgia, 'Times New Roman', Times, serif !important;
 }
 
@@ -913,7 +955,7 @@ body#blur.active {
 .popup p{
     color: #003257;
     font-size: 130%;
-    text-align: center;
+    text-align: justify;
 }
 .popup label{
     color: #003257;
@@ -972,17 +1014,6 @@ input {
     margin-top: 20px;
 }
 
-/* .btn {
-    width: 100%;
-    padding: 10px;
-    background: #001f42;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-} */
 
 .btn:hover {
     background: #006834;
@@ -1048,6 +1079,9 @@ input {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+.mentor-img{
+    width: 60% !important;
 }
     
 
@@ -1263,15 +1297,22 @@ input {
     transform: scale(1.05);
     box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
 }
-
+.mentor-card p{
+    color: #003257;
+}
+.mentor-card h1{
+    padding-top: 15%;
+}
 
 /* laptop */
 
-@media (max-width:1441px) {
+@media (max-width:1440px) {
+    .logo {
+        width: 100% !important;
+        /* padding-left: 15%; */
+    }
     .nav-link {
-        font-size: 90% !important;
-        padding: 0.5rem 1rem;
-        text-align: left;
+        font-size: 120% !important;
     }
     .navbar-nav {
         display: flex;
@@ -1290,11 +1331,6 @@ input {
         width: 70px !important;
         height: 70px !important;
     }
-
-    .logo {
-        width:50% !important;
-    }
-
     .intro_container {
         padding-right: 5% !important;
     }
@@ -1310,6 +1346,16 @@ input {
 
     .transprent_place {
         min-height: 300px;
+    }
+    .volunteer-btn {
+        position: fixed;
+        bottom: 50%;
+        /* left: 1.5%; */
+        right: 1%;
+    }
+    .fixed-donate-btn {
+        bottom:60% !important; 
+        right: 1% !important;
     }
 
     .OM img {
@@ -1331,7 +1377,9 @@ input {
     }
 
     .Intro-img {
-        width: 80%;
+        width: 100%;
+        height: 70%;
+        margin-left: 10%;
     }
 
     .popup {
@@ -1358,9 +1406,9 @@ input {
 
 @media(max-width:1024px) {
     .logo {
-        width: 50% !important;
+        width: 90% !important;
+        padding-left: 15%;
     }
-
     .nav-link {
         font-size: 90% !important;
         padding: 0.5rem 1rem;
@@ -1391,7 +1439,10 @@ input {
     }
 
     .Intro-img {
-        width: 60% !important;
+        width: 80% !important;
+        height: 80% !important;
+        margin-left: 10%;
+        margin-top: 0% !important;
     }
 
     .OG-contain {
@@ -1473,9 +1524,10 @@ input {
 
 /* tablet view */
 
-@media (max-width:769px) {
+@media (max-width:768px) {
     .logo {
-        width: 40% !important;
+        width: 80% !important;
+        padding-left: 15%;
     }
 
     .navbar-toggler {
@@ -1503,6 +1555,21 @@ input {
     .fixed-donate-btn {
         bottom:50% !important; 
     }
+
+    .volunteer-btn {
+        position: fixed !important;
+        bottom: 40% !important;
+        /* left: 1.5%; */
+        right: 1% !important;
+    }
+.mentor-card h1{
+    padding-top: 15% !important;
+    font-size: 16px !important;
+}
+.mentor-card p{
+    font-size: 14px !important;
+}
+
     .nav-item{
         padding-bottom: 1% !important;
     }
@@ -1536,7 +1603,7 @@ input {
     }
 
     .Intro-img {
-        width: 60%;
+        width: 100%;
     }
 
     .cartd {
@@ -1687,7 +1754,7 @@ input {
     }
 
     .OBI-1 img {
-        width: 50% !important;
+        width: 30% !important;
         height: 55% !important;
     }
 
@@ -1696,20 +1763,29 @@ input {
     }
 
     .OBI-2 img {
-        width: 90% !important;
+        width: 100% !important;
         height: 65% !important;
     }
+    
 
     .rahul-col img {
-        width: 35% !important;
-        height: 60 !important;
+        height: 80% !important;
     }
 
-
+    
     .gokul-col img {
-        width: 35% !important;
-        height: 60 !important;
+        height: 60% !important;
+        width: 200px !important;
     }
+    
+    .kaviya-col img {
+        height: 60% !important;
+    }
+    .popup img {
+        width: 200px !important;
+    }
+
+
 
     .footer-logo-text {
         font-size: 24px !important;
@@ -1722,18 +1798,14 @@ input {
         font-size: 24px !important;
         padding-bottom: 12% !important;
     }
-      
-
-
-
 }
 
 /* mobile Long  */
 
 @media (max-width: 425px) {
     .logo {
-        width: 50% !important;
-        padding-right: 5%;
+        width: 70% !important;
+        padding-left: 25%;
     }
 
     .navbar-toggler {
@@ -1760,8 +1832,28 @@ input {
     }
     .fixed-donate-btn {
         bottom:60% !important; 
-        left:1% !important
+        right:1% !important;
+        width: 50px !important;
+        height: 50px !important;   
+        
     }
+    .fixed-donate-btn i{
+        width:50% !important;
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
+    }
+    .volunteer-btn {
+        position: fixed !important;
+        bottom: 50% !important;
+        /* left: 1.5%; */
+        right: 1% !important;
+        width: 50px !important;
+        height: 50px !important;    
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
+    }
+
+
     .nav-item{
         padding-bottom: 1% !important;
     }
@@ -1839,20 +1931,6 @@ input {
         padding-bottom: 5%;
     }
 
-    /* .OPE-title h1{
-        font-size: 24px !important;
-        padding: 2%;
-    }
-    .OPE-section p{
-        font-size: 16px !important;
-    }
-    .OPE{
-        padding-bottom: 2% !important;
-        padding-top: 1% !important;
-    }
-    .OPE-img{
-        width: 70% !important;
-    } */
     .transprent_place {
         min-height: 230px !important;
     }
@@ -1933,12 +2011,6 @@ input {
     .OVR-contain p {
         padding-bottom: 10% !important;
     }
-
-    /* .OPI-title h1{
-        font-size: 24px !important;
-        padding-top: 5% !important;
-        padding-bottom: 5% !important;
-     } */
     .card_col {
         padding-bottom: 5% !important;
     }
@@ -1986,12 +2058,10 @@ input {
         font-size: 16px;
     }
 
-    .raghul-img {
-        padding-top: 5% !important;
-    }
-
     .gokul-img {
         padding-top: 10% !important;
+        height: 50% !important;
+        width: 30% !important;
     }
 
     .kaviya-img {
@@ -2086,16 +2156,17 @@ input {
     }
     .mentor-img{
         width: 30% !important;
-    }
-    .raghul-img{
-        width: 70% !important;
-    }
-    .gokul-img{
-        width: 70% !important;
-    }
-    .kaviya-img{
-        width: 70% !important;
-    }
+}
+.rahul-col img{
+    width: 200px !important;
+}
+.popup img {
+    width: 200px !important;
+}
+.mentor-img{
+    width: 60% !important;
+}
+
 
 }
 
@@ -2103,8 +2174,8 @@ input {
 
 @media (max-width: 380px) {
     .logo {
-        width: 50% !important;
-        padding-right: 5%;
+        width: 70% !important;
+        padding-left: 25%;
     }
     .navbar-toggler {
         background-color: #e7f5fe !important;
@@ -2113,12 +2184,22 @@ input {
         width: 40px !important;
         height: 40px !important;
     }
-    .fixed-donate-btn {
-        bottom:50% !important; 
-    }
+
     .fixed-donate-btn {
         bottom:60% !important; 
-        left:1% !important
+        right:1% !important;
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
+    }
+    .volunteer-btn {
+        position: fixed !important;
+        bottom: 50% !important;
+        /* left: 1.5%; */
+        right: 1% !important;
+        width: 50px !important;
+        height: 50px !important;    
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
     }
 
     .collapse {
@@ -2307,7 +2388,9 @@ input {
     }
 
     
-
+    .popup img {
+        width: 200px !important;
+    }
 
     
 
@@ -2317,18 +2400,30 @@ input {
 
 @media (max-width: 320px) {
     .logo {
-        width: 50% !important;
-        padding-right: 5%;
+        width: 90% !important;
     }
     .navbar-toggler {
         background-color: #e7f5fe !important;
     }
-    .fixed-donate-btn {
-        bottom:50% !important; 
-    }
+
     .fixed-donate-btn {
         bottom:62% !important; 
-        left:1% !important
+        right:1% !important;
+        bottom:60% !important; 
+        right:1% !important;
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
+    }
+
+    .volunteer-btn {
+        position: fixed !important;
+        bottom: 50% !important;
+        /* left: 1.5%; */
+        right: 1% !important;
+        width: 50px !important;
+        height: 50px !important;    
+        padding-top: 6% !important;
+        padding-bottom: 6% !important;
     }
 
     .collapse {
@@ -2479,10 +2574,8 @@ input {
     .kaviya-img{
         width: 70% !important;
     }
-    .popup img{
-        width: 150% !important;
-        height: 150% !important;
-    }
+
+
 
     .footer-logo-text {
         font-size: 21px !important;
@@ -2516,27 +2609,3 @@ input {
     }
 
 }
-
-
-
-/* 
-@media (max-width: 425px) {
-    .mentor-card {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-    }
-}
-
-@media (max-width: 380px) {
-    .mentor-card {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-    }
-}
-
-@media (max-width: 320px) {
-    .mentor-card {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-    }
-} */

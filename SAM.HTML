@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Flip Card Test</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $('.card').click(function(e){
+    e.preventDefault();
+    $(this).toggleClass('flipped');
+    })
+})
+</script>
+
+<style>
+.card {
+width: 300px;
+height: 300px;
+margin: 25px;
+perspective: 1000px;
+cursor: pointer;
+transition: transform 1s;
+transform-style: preserve-3d;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.card.flipped {
+transform: rotateY( 180deg );
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.card-front, .card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+padding: 25px;
+backface-visibility: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card-back {
+transform: rotateY(180deg);
+}
+
+</style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-front">
+            The front
+        </div>
+        <div class="card-back">
+            The back
+        </div>
+    </div>
+    
+    <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+      
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
+
+</body>
+</html>

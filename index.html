@@ -13,41 +13,22 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- carosel -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- for footer  -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <!-- FOR contact us logos  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- Include Owl Carousel and jQuery -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
-    <!-- <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
-    <!-- <link rel="stylesheet" href="test5.css"> -->
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- boodstrap donate button  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
-    <!-- jQuery -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    <!-- Remove this line -->
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
-
-
-    <!-- Owl Carousel JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-    <!-- https://script.google.com/macros/s/AKfycbzBGSxageT-5FXJr_vN3npFqCho5udbXVy--RG1jW5ElaB0gGb8bQcyXz8seGHpYT8/exec -->
-
-    <!-- AKfycbzBGSxageT-5FXJr_vN3npFqCho5udbXVy--RG1jW5ElaB0gGb8bQcyXz8seGHpYT8 -->
-
 
 </head>
 
 <body id="home" style="overflow-x: hidden !important;">
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
@@ -55,7 +36,9 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <img src="/images/cirpi_logo.png" class="logo" alt="cirpi_logo">
+            <a href="#home" target="_blank">
+                <img src="/images/cirpi_logo.png" class="logo" alt="cirpi_logo">
+            </a>
 
         </div>
 
@@ -67,13 +50,15 @@
                 <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
 
                 <li><button class="donate-btn ms-auto" onclick="openPopup('popup_donate')">Donate</button></li>
-                <!-- <li><button class=" donate-btn ms-auto">Donate</button></li> -->
 
             </ul>
 
         </div>
 
         <div id="blur-overlay"></div>
+<!-- Donate Button -->
+
+        <!-- Donate Popup -->
         <div class="popup" id="popup_donate">
             <div class="intro-head">
                 <h1>Support CIRPI Educational Foundation</h1>
@@ -90,14 +75,14 @@
                 <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
                 <input type="text" id="donorMobile" name="donorMobile" required>
 
-                <button type="submit" class="donate-btn">Proceed to Donate</button>
+                <button type="submit" class="donate-submit-btn donate-btn">Proceed to Donate</button>
             </form>
 
             <div id="qrSection" style="display: none;">
                 <div class="intro-head">
                     <h1 class="scan-txt">Scan to Donate</h1>
                 </div>
-                <img class="QR-img" src="/images/QR.webp" id="qrCode" alt="QR Code">
+                <img class="QR-img" src="./images/payment_qr.jpg" id="qrCode" alt="QR Code">
                 <p id="countdown"></p>
             </div>
 
@@ -107,6 +92,7 @@
         <!-- <button class="donate-btn"><img src="/images/donate_btn.png" alt="donate button"></button> -->
         <!-- <a href="#"><img src="images/donate-img.png" class="donate-btn" alt="donate button"></a> -->
     </nav>
+
     <!-- Hero Section -->
     <div class="container-fluid section hero_section">
         <section class="hero  text-center ">
@@ -124,15 +110,19 @@
                 </p>
             </div>
         </section>
+
+        <!-- donate button -->
         <div class="d-flex justify-content-center align-items-center">
-            <button class="blink-donate-btn fixed-donate-btn" onclick="openPopup('popup_donate')">
+            <button class="fixed-donate-btn" onclick="openPopup('popup_donate')">
                 <i class="fas fa-hand-holding-heart"></i>
+                <span class="donate-text bold">DONATE</span>
             </button>
         </div>
+        
         <!-- Volunteer Button -->
         <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
             <i class="fa-solid fa-users"></i>
-            <span class="volunteer-text">VOLUNTEER</span>
+            <span class="volunteer-text bold">VOLUNTEER</span>
         </div>
 
         <!-- Volunteer Popup -->
@@ -142,9 +132,7 @@
                 <p>Fill in the details to become a part of CIRPI Educational Foundation.</p>
             </div>
 
-            <div class="volunteer-container">
-                <h2 class="volunteer-heading">Join as a Volunteer</h2>
-                <p class="volunteer-subtext">Fill in the details to become a part of CIRPI Educational Foundation.</p>
+            <div class="volunteer-container ">
 
                 <form class="volunteer-form">
                     <label for="volunteer-name" class="volunteer-label">Name:</label>
@@ -159,7 +147,7 @@
                     <input type="tel" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number"
                         required>
 
-                    <button type="submit" class="volunteer-submit-btn">Submit</button>
+                    <button type="submit" class="volunteer-submit-btn donate-btn">Submit</button>
                 </form>
             </div>
 
@@ -174,7 +162,7 @@
             <div class="intro-head">
                 <h1>Welcome to <span class="head">CIRPI Educational Foundation</span> </h1>
             </div>
-            <div class="col-xl-6 col-md-12 col-sm-12  img-container">
+            <div class="col-xl-7 col-md-12 col-sm-12  img-container">
 
                 <div class="intro-text">
                     <p>
@@ -201,10 +189,11 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xl-6 col-md-12 col-sm-12  img-container"> <img class="Intro-img" src="/images/sample.webp"
+            <div class="col-xl-5 col-md-12 col-sm-12  img-container"> <img class="Intro-img" src="./images/intro-img-1.jpg"
                     alt=""> </div>
         </div>
     </div>
+
     <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
         <div class="logos overflow-hidden py-5 px-0 position-relative"
             style="background-color: #fff; white-space: nowrap;">
@@ -302,35 +291,7 @@
         </div>
     </div>
 
-    <div class="Our-Vission">
-        <div class="container-fluid section OV">
-            <div class="our-vision ">
-                <h1>Our Vision</h1>
-            </div>
-            <div class="container-fluid OVR-contain">
-                <p class="OV-text">At Cirpi Educational Foundation, we envision a world where every student, regardless
-                    of their
-                    background,
-                    has access to quality education, hands-on learning, and career-building opportunities. By
-                    bridging
-                    the
-                    gap between theoretical knowledge and real-world applications, we equip students with financial
-                    assistance, mentorship, and practical training to help them excel in their fields, innovate
-                    solutions,
-                    and lead industries with purpose. Beyond academics, we focus on holistic development, fostering
-                    leadership, problem-solving skills, and a mindset of lifelong learning. Through a collaborative
-                    and
-                    inclusive educational ecosystem, we strive to create future professionals who not only thrive in
-                    their
-                    careers but also drive positive change, contributing to a more equitable, innovative, and
-                    socially
-                    responsible world. Our mission is to nurture future professionals who will lead industries,
-                    innovate solutions, and
-                    contribute to a more equitable world.
-                </p>
-            </div>
-        </div>
-    </div>
+
 
     <!-- <div class="container-fluid section OPE">
         <div class="container-fluid OPE-section"> 
@@ -359,10 +320,41 @@
         <h1>Your Small Help Can Spark a <span class="tp-bright">Bright Future</span> </h1>
     </div>
 
-    <div class="container-fluid section OM">
-        <div class="our-Mission">
-            <h1>Our Mission</h1>
+    <div class="Our-Vission">
+        <div class="container-fluid section OV">
+            <div class="our-vision p-3">
+                <h1>Our Vision</h1>
+            </div>
+            <div class="container-fluid OVR-contain">
+                <p class="OV-text">At Cirpi Educational Foundation, we envision a world where every student, regardless
+                    of their
+                    background,
+                    has access to quality education, hands-on learning, and career-building opportunities. By
+                    bridging
+                    the
+                    gap between theoretical knowledge and real-world applications, we equip students with financial
+                    assistance, mentorship, and practical training to help them excel in their fields, innovate
+                    solutions,
+                    and lead industries with purpose. Beyond academics, we focus on holistic development, fostering
+                    leadership, problem-solving skills, and a mindset of lifelong learning. Through a collaborative
+                    and
+                    inclusive educational ecosystem, we strive to create future professionals who not only thrive in
+                    their
+                    careers but also drive positive change, contributing to a more equitable, innovative, and
+                    socially
+                    responsible world. Our mission is to nurture future professionals who will lead industries,
+                    innovate solutions, and
+                    contribute to a more equitable world.
+                </p>
+            </div>
         </div>
+    </div>
+    <div class="our-Mission text-center">
+        <h1>Our Mission</h1>
+    </div>
+
+    <div class="container-fluid section OM">
+     
         <div class="container-fluid OVM-contain">
             <h1>Empowering Dreams, Shaping Futures</h1>
             <div class="row">
@@ -404,10 +396,10 @@
             <div class="row">
 
                 <!-- Mr. Raghul Vijayan -->
-                <div class="col-xl-4 col-md-12 col-sm-12  OBI-1  rahul-col">
-                    <img class="raghul-img" src="/images/raghul.png" alt="raghul">
+                <div class="col-xl-4 col-md-12 col-sm-12  OBI-1 rahul-col">
+                    <img class="raghul-img rag-2" src="/images/raghul.png" alt="raghul">
                     <h1>Mr Raghul Vijayan</h1>
-                    <p>TCS,Chennai</p>
+                    <p>TCS,Chennai</p> 
                     <button class="btn" onclick="openPopup('popup_raghul'); toggle();">Read More</button>
                     <div class="popup" id="popup_raghul">
                         <img class="pop_img" src="/images/raghul.png" alt="raghul">
@@ -444,7 +436,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 gokul-col OBI-1">
                     <img class="gokul-img" src="/images/sample-logo.png" alt="gokul">
                     <h1>Mr Gokul Kittusamy</h1>
-                    <p>Elerchitek MD</p>
+                    <p>Elerchitek MD Chennai</p>
                     <button class="btn" onclick="openPopup('popup_gokul')">Read More</button>
                     <div class="popup" id="popup_gokul">
                         <img class="pop_img" src="/images/sample-logo.png" alt="gokul">
@@ -574,6 +566,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-fluid section our-board">
         <div class="board-members">
             <h1 class="mentor-head">Our Mentors</h1>
@@ -583,22 +576,22 @@
                 <div class="carousel-item active">
                     <div class="container">
                         <div class="row d-flex justify-content-center text-center">
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid mentor-img">
                                 <h1>Ms Shiva Kumar</h1>
                                 <p>Hope3</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
                                 <h1>Mr Srinivasan</h1>
                                 <p>Lions Club, Tambaram</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Arumugam" class="img-fluid mentor-img">
                                 <h1>Mr Arumugam</h1>
                                 <p>TN Govt School Teacher</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid mentor-img">
                                 <h1>Mr Saravanan</h1>
                                 <p>Accenture, Chennai</p>
@@ -609,24 +602,24 @@
                 <div class="carousel-item">
                     <div class="container">
                         <div class="row d-flex justify-content-center text-center">
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
                                 
                                 <h1>Ms Preethi</h1>
                                 <p>Dell, Bangalore</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
 
                                 <h1>Mr Yoga Balaji</h1>
                                 <p>MuSigma, Bangalore</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
                                 <h1>Mr Jijith Kumar</h1>
-                                <p>Senior Bailiff, Coimbatore</p>
+                                <p>Head Bailiff, Coimbatore</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
+                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
                                 <h1>Ms Shamyuktha</h1>
                                 <p>Titan, Hosur</p>
@@ -715,6 +708,7 @@
             <div class="tagline"># Empowering Knowledge, Transforming Tomorrow</div>
         </div>
     </div>
+
 </body>
 
 </html>
