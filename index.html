@@ -23,6 +23,10 @@
     <!-- boodstrap donate button  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- new style in boot -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </head>
@@ -56,7 +60,7 @@
         </div>
 
         <div id="blur-overlay"></div>
-<!-- Donate Button -->
+        <!-- Donate Button -->
 
         <!-- Donate Popup -->
         <div class="popup" id="popup_donate">
@@ -118,11 +122,13 @@
                 <span class="donate-text bold">DONATE</span>
             </button>
         </div>
-        
+
         <!-- Volunteer Button -->
-        <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
-            <i class="fa-solid fa-users"></i>
-            <span class="volunteer-text bold">VOLUNTEER</span>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
+                <i class="fa-solid fa-users"></i>
+                <span class="volunteer-text bold">VOLUNTEER</span>
+            </div>
         </div>
 
         <!-- Volunteer Popup -->
@@ -157,14 +163,14 @@
 
     </div>
 
-    <div class="container-fluid section intro_container">
+    <div class="container-fluid intro_container">
         <div class="row">
             <div class="intro-head">
                 <h1>Welcome to <span class="head">CIRPI Educational Foundation</span> </h1>
             </div>
-            <div class="col-xl-7 col-md-12 col-sm-12  img-container">
+            <div class="col-xl-6 col-md-12 col-sm-12 ">
 
-                <div class="intro-text">
+                <div class="intro-text ">
                     <p>
                         At Cirpi Educational Foundation, we are committed to empowering students from economically
                         disadvantaged backgrounds by providing financial assistance for higher education and
@@ -189,43 +195,10 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xl-5 col-md-12 col-sm-12  img-container"> <img class="Intro-img" src="./images/intro-img-1.jpg"
-                    alt=""> </div>
+            <div class="col-xl-6 col-md-12 col-sm-12  "> <img class="Intro-img"
+                    src="./images/intro-image.png" alt=""> </div>
         </div>
     </div>
-
-    <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
-        <div class="logos overflow-hidden py-5 px-0 position-relative"
-            style="background-color: #fff; white-space: nowrap;">
-            <div class="logos-slide d-inline-block">
-
-                <img src="/images/num-1.webp" alt="num-1">
-
-                
-                <img class="caros-img" src="/images/num-2.webp" alt="num-2">
-                <img class="caros-img" src="/images/num-3.webp" alt="num-3">
-                <img class="caros-img" src="/images/num-4.webp" alt="num-4">
-                <img src="/images/num-5.webp" alt="num-5">
-                <img src="/images/num-6.webp" alt="num-6">
-                <img src="/images/num-7.webp" alt="num-7">
-                <img src="/images/num8.webp" alt="num-8">
-                <img src="/images/num-9.webp" alt="num-9">
-                <img src="/images/num-10.webp" alt="num-10">
-                               
-                <img src="/images/num-2.webp" alt="num-2">
-                <img src="/images/num-3.webp" alt="num-3">
-                <img src="/images/num-4.webp" alt="num-4">
-                <img src="/images/num-5.webp" alt="num-5">
-                <img src="/images/num-6.webp" alt="num-6">
-                <img src="/images/num-7.webp" alt="num-7">
-                <img src="/images/num8.webp" alt="num-8">
-                <img src="/images/num-9.webp" alt="num-9">
-                <img src="/images/num-10.webp" alt="num-10">
-               
-            </div>
-        </div>
-    </main> -->
-
     <div class="container-fluid section OG">
         <div class="row">
             <div class="OG-title">
@@ -291,8 +264,6 @@
         </div>
     </div>
 
-
-
     <!-- <div class="container-fluid section OPE">
         <div class="container-fluid OPE-section"> 
             <div class="row">
@@ -349,18 +320,23 @@
             </div>
         </div>
     </div>
+
     <div class="our-Mission text-center">
         <h1>Our Mission</h1>
     </div>
 
     <div class="container-fluid section OM">
-     
-        <div class="container-fluid OVM-contain">
-            <h1>Empowering Dreams, Shaping Futures</h1>
-            <div class="row">
-                <div class="col-xl-6 col-md-12 col-sm-12">
 
-                    <p class="our-mission-text">At CIRPI Educational Foundation, we envision a future where no
+        <div class="container-fluid OVM-contain">
+
+            <div class="row">
+                <div class="col-xl-5 col-md-12 col-sm-12 OV-img-col">
+                    <img class="OV-img" src="./images/OV-Mission-1.png" alt="">
+                </div>
+
+                <div class="col-xl-7 col-md-12 col-sm-12">
+                    <h1>Empowering Dreams, Shaping Futures</h1>
+                    <p class="our-mission-text pr-5">At CIRPI Educational Foundation, we envision a future where no
                         student's
                         potential is limited by
 
@@ -380,8 +356,7 @@
                         <p>● Mentorship programs for career guidance and personal growth.</p>
                     </div>
                 </div>
-                <div class="col-xl-6 col-md-12 col-sm-12  img-container"> <img class="OV-img" src="/images/sample.webp"
-                        alt=""> </div>
+
             </div>
 
         </div>
@@ -399,7 +374,7 @@
                 <div class="col-xl-4 col-md-12 col-sm-12  OBI-1 rahul-col">
                     <img class="raghul-img rag-2" src="/images/raghul.png" alt="raghul">
                     <h1>Mr Raghul Vijayan</h1>
-                    <p>TCS,Chennai</p> 
+                    <p>Cognizant,Chennai</p>
                     <button class="btn" onclick="openPopup('popup_raghul'); toggle();">Read More</button>
                     <div class="popup" id="popup_raghul">
                         <img class="pop_img" src="/images/raghul.png" alt="raghul">
@@ -434,12 +409,12 @@
 
                 <!-- Mr. Gokul Kittusamy -->
                 <div class="col-xl-4 col-md-6 col-sm-12 gokul-col OBI-1">
-                    <img class="gokul-img" src="/images/sample-logo.png" alt="gokul">
+                    <img class="gokul-img" src="./images/gokul-g.png" alt="gokul">
                     <h1>Mr Gokul Kittusamy</h1>
-                    <p>Elerchitek MD Chennai</p>
+                    <p>Elerchitek CEO & MD, Chennai</p>
                     <button class="btn" onclick="openPopup('popup_gokul')">Read More</button>
                     <div class="popup" id="popup_gokul">
-                        <img class="pop_img" src="/images/sample-logo.png" alt="gokul">
+                        <img class="pop_img" src="./images/gokul-g.png" alt="gokul">
                         <h1>Mr Gokul Kittusamy</h1>
                         <h3>Co-Founder</h3>
                         <p> Gokul Kittusamy, co-founder of Cirpi Educational Foundation, is deeply committed to
@@ -487,7 +462,7 @@
                 <div class="col-xl-4 col-md-6 col-sm-12 OBI-1 gokul-col">
                     <img class="kaviya-img" src="/images/kaviya.png" alt="kaviya">
                     <h1>Ms Kaviya</h1>
-                    <p>Varahe Analytics , India</p>
+                    <p>Varahe Analytics,Chennai</p>
                     <button class="btn" onclick="openPopup('popup_kaviya')">Read More</button>
                     <div class="popup" id="popup_kaviya">
                         <img class="pop_img" src="/images/kaviya.png" alt="kaviya">
@@ -571,27 +546,30 @@
         <div class="board-members">
             <h1 class="mentor-head">Our Mentors</h1>
         </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
             <div class="carousel-inner">
+
+                <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <div class="container">
                         <div class="row d-flex justify-content-center text-center">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid mentor-img">
-                                <h1>Ms Shiva Kumar</h1>
-                                <p>Hope3</p>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/Siva.png" alt="Ms Preethi" class="img-fluid mentor-img">
+                                <h1>Mr Shiva Kumar</h1>
+                                <p>Manager Hope3</p>
                             </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/arumugam.png" alt="Mr Arumugam" class="img-fluid mentor-img">
+                                <h1>Mr Arumugam</h1>
+                                <p>TN Govt School Teacher</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
                                 <h1>Mr Srinivasan</h1>
                                 <p>Lions Club, Tambaram</p>
                             </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Arumugam" class="img-fluid mentor-img">
-                                <h1>Mr Arumugam</h1>
-                                <p>TN Govt School Teacher</p>
-                            </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid mentor-img">
                                 <h1>Mr Saravanan</h1>
                                 <p>Accenture, Chennai</p>
@@ -599,46 +577,82 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Slide 2 -->
                 <div class="carousel-item">
                     <div class="container">
                         <div class="row d-flex justify-content-center text-center">
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
-                                
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/kathik.png" alt="Mr Karthik" class="img-fluid mentor-img">
+                                <h1>Mr Karthik</h1>
+                                <p>USA</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/preethi.png" alt="Ms Preethi" class="img-fluid mentor-img">
                                 <h1>Ms Preethi</h1>
-                                <p>Dell, Bangalore</p>
+                                <p>Dell Technologies, Bangalore</p>
                             </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/pooja.png" alt="Mr Ji" class="img-fluid mentor-img">
+                                <h1>MS Pooja</h1>
+                                <p>Head Bailiff, Coimbatore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
+                                <h1>Ms Shamyuktha</h1>
+                                <p>Titan TEAL, Hosur</p>
+                            </div>
 
-                                <h1>Mr Yoga Balaji</h1>
-                                <p>MuSigma, Bangalore</p>
-                            </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/jijith.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
                                 <h1>Mr Jijith Kumar</h1>
                                 <p>Head Bailiff, Coimbatore</p>
                             </div>
-                                <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
-                                <h1>Ms Shamyuktha</h1>
-                                <p>Titan, Hosur</p>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/amrish.png" alt="Mr Amrish" class="img-fluid mentor-img">
+                                <h1>Mr Amrish</h1>
+                                <p>Assen Technologies, Bangalore</p>
+                            </div>
+                           
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr Yoga Balaji</h1>
+                                <p>MuSigma, Bangalore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/rajalakshmi.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Ms RajaLakshmi</h1>
+                                <p>Accenture, Chennai</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+
+
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
+
 
     <div id="get-involved" class="container-fluid GI GI-contain">
         <div class="get-involved">
@@ -648,7 +662,8 @@
             <div class="col-6 vol-col text-center">
                 <img class="support_img" src="/images/volunteer.png" alt="volunteer_img">
                 <h2 class="GI-head">Volunteer With Us</h2>
-                <p class="GI-text">Offer your skills and time to mentor students or contribute to educational programs.
+                <p class="GI-text">Offer your skills and time to mentor students or contribute to educational
+                    programs.
                     Sharing
                     knowledge can inspire and empower learners, creating a positive impact on their academic <span
                         class="GI-span"> and
@@ -658,7 +673,8 @@
             <div class="col-6 text-center">
                 <img class="support_img" src="/images/support.png" alt="support_img">
                 <h2 class="GI-head">Support With Us</h2>
-                <p class="GI-text">Make a difference today by contributing to education programs. Your support creates
+                <p class="GI-text">Make a difference today by contributing to education programs. Your support
+                    creates
                     learning
                     opportunities for students in need. Together, we can shape a brighter future and inspire the
                     next <span class="GI-span-2">generation.</span></p>
@@ -689,7 +705,7 @@
                         <p><i class="fas fa-map-marker-alt"></i> No 8 , Raja Street , Salangapalayam , Bhavani(TK) ,
                             Erode</p>
                         <p><i class="fas fa-phone-alt"></i> +91 88077 33343</p>
-                        <p><i class="fas fa-envelope"></i> info@cirpi.in</p>
+                        <p><i class="fas fa-envelope"></i> info@cirpie.in</p>
                     </div>
 
                     <!-- <div class="email-form">

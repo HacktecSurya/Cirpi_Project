@@ -323,7 +323,8 @@ html {
     width: 40% !important;
 }
 .donate-btn:hover {
-    background-color:#006834 !important;
+    background-color:#c5f8ff !important;
+    color: #1E3A8A !important;
     transform: scale(0.9);
 }
 .hero {
@@ -398,7 +399,6 @@ html {
 }
 
 .intro_container {
-    padding-top: 1%;
     background-color: white;
 }
 
@@ -415,21 +415,21 @@ html {
     color: #ffd700;
 } */
 .intro-text {
-    padding: 3%;
+    padding: 0% !important;
+    display: flex;
+    align-items: center !important;
     color: #003257;
-    text-align: justify;
-    margin-left: 10%;
-    margin-bottom: 0%;
+
 }
 .Intro-img {
-    width: 100% !important;
-    height: 100% !important;
-    margin-left: 5%;
-    margin-top: 0% !important;
+    width: 60% !important;
+    height: 80% !important;
 }
 
 .intro-text p {
     font-size: 24px !important;
+    
+    text-align: justify !important;
 }
 .car-img{
     width: 85% !important;
@@ -453,7 +453,8 @@ html {
     font-size: 24px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: width 0.3s ease, padding 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.9s ease-in-out, transform 0.9s ease-in-out !important;
+    transform: scale(1) !important;
     overflow: hidden;
     padding: 0;
     white-space: nowrap;
@@ -502,10 +503,8 @@ html {
 }
 
 
-.fixed-volunteer-btn {
+.volunteer-btn {
     position: fixed !important;
-    bottom:50% !important; /* Places the button closer to the bottom */
-    left: 20px !important;
     z-index: 1000 !important; /* Keeps it above other elements */
     margin: 0; /* Ensures no extra spacing */
     padding: 0;
@@ -553,7 +552,8 @@ html {
 }
 
 .volunteer-submit-btn:hover {
-    background-color: #218838;
+    background-color: #c5f8ff !important;
+    color: #1E3A8A !important;
 }
 
 
@@ -572,7 +572,7 @@ html {
 }
 
 .volunteer-success-popup .popup-content h2 {
-    color: #1E3A8A;
+    color: #E4FEFF;
 }
 
 .volunteer-success-popup button {
@@ -679,7 +679,8 @@ html {
     opacity: 0.8;
 }
 .OV-img{
-    width:50% !important;
+    width:1500px !important;
+    height: 100%;
 }
 
 .OVR-contain {
@@ -761,15 +762,25 @@ html {
 .OM img {
     width: 50% !important;
 }
+
 .img-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-bottom: 40px; 
 }
 
-
+.OV-img-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OV-img-col img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
 
 
 .OG {
@@ -930,7 +941,7 @@ body#blur.active {
 }
 .popup {
     overflow-y: auto;
-    width: 80% !important;
+    width: 60% !important;
     max-height: 90vh !important;
     padding: 20px;
     text-align: center;
@@ -1030,26 +1041,32 @@ input {
     .btn {
         color: #e7e7e7 !important;
         background-color: #001f42 !important;
-        border-color: #ffffff;
         font-weight: bold !important;
+        border-radius: 9px !important; 
         display: flex;
         padding-right: 10% !important; 
         padding-left: 10% !important; 
         text-align: center !important;
         transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out; 
         transform: scale(1);
+
     }
 
 .btn:hover {
-    background-color:#b0dcf1 !important; /* Change color on hover */
-    transform: scale(1.1);
+    transform: scale(0.9);
+    border: 5px solid #001f42;
+    background-color:#c5f8ff !important; /* Change color on hover */
+   
     color:#003257 !important;
+    /* border-color: #001f42; */
+    margin-bottom: -1% !important;
+
 }
 .popup .btn {
     padding-right: 1%; 
     padding-left: 1%; 
     font-size: 18px; /* Increase text size */
-    border-radius: 8px; /* Optional: Rounded corners */
+    border-radius: 10px; /* Optional: Rounded corners */
 }
 .popup {
     display: flex;
@@ -1081,7 +1098,7 @@ input {
     height: auto;
 }
 .mentor-img{
-    width: 60% !important;
+    width: 80% !important;
 }
     
 
@@ -1372,8 +1389,7 @@ input {
     }
 
     .OV-img {
-        max-width: 100%;
-        height: auto;
+        width: 100%;
     }
 
     .Intro-img {
@@ -1436,13 +1452,12 @@ input {
 
     .intro-text p {
         font-size: 20px !important;
+        margin-top: 1%  !important;
     }
 
     .Intro-img {
         width: 80% !important;
         height: 80% !important;
-        margin-left: 10%;
-        margin-top: 0% !important;
     }
 
     .OG-contain {
@@ -2609,3 +2624,96 @@ input {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+    .cirpi-card {
+      max-width: 900px;
+      margin: 2rem auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .cirpi-header {
+      background-color: #0a1833;
+      color: white;
+      padding: 1rem 1.5rem;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .cirpi-header .badge {
+      background-color: #495057;
+    }
+
+    .cirpi-body {
+      padding: 2rem;
+    }
+
+    .cirpi-qr {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .cirpi-contact h5 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .cirpi-contact p {
+      margin-bottom: 0.5rem;
+    }
+
+    .cirpi-buttons .btn {
+      min-width: 100px;
+      font-weight: 600;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .cirpi-buttons .btn-primary {
+      background-color: #0a1833;
+      border: none;
+    }
+
+    .cirpi-buttons .btn-primary:hover {
+      background-color: #11284f;
+    }
+
+    .cirpi-receiver {
+      text-align: center;
+      font-weight: 600;
+      margin-top: 2rem;
+    }
+
+    .cirpi-footer-note {
+      text-align: center;
+      color: #6c757d;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 767px) {
+      .cirpi-body {
+        padding: 1.5rem;
+      }
+
+      .cirpi-buttons {
+        justify-content: center;
+      }
+    }

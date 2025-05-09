@@ -1,112 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        
+    <meta charset="utf-8" />
+    <title>Payment Details – Elarchitek</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
     <style>
-        /* Default: 4 mentors per row (for laptops & tablets) */
-        .mentor-card {
-            text-align: center;
-            padding: 15px;
-        }
-        
-        /* 1 mentor per row for small screens (mobile) */
-        @media (max-width: 425px) {
-            .mentor-card {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
-        
-        @media (max-width: 380px) {
-            .mentor-card {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
-        
-        @media (max-width: 320px) {
-            .mentor-card {
-                flex: 0 0 100%;
-                max-width: 100%;
-            }
-        }
-        </style>
+        body { background:#f8f9fa; }
+        .card-title       { font-weight:700; font-size:1.8rem; }
+        .card-header      { background:#061124; color:#fff; }
+        .qr-img           { width:100%; height:auto; border-radius:.25rem; }
+        .btn-yes          { min-width:90px; }
+        .btn-no           { min-width:90px; }
+        .receiver-label   { font-weight:600; }
+        .help-note        { font-size:.9rem; color:#6c757d; }
+    </style>
 </head>
 <body>
-    <div class="container-fluid section our-board">
-        <div class="board-members">
-            <h1 class="mentor-head">Our Mentors</h1>
-        </div>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Ms Preethi" class="img-fluid mentor-img">
-                                <h1>Ms Preethi</h1>
-                                <p>Dell, Bangalore</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
-                                <h1>Mr Srinivasan</h1>
-                                <p>Lions Club, Tambaram</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Arumugam" class="img-fluid mentor-img">
-                                <h1>Mr Arumugam</h1>
-                                <p>TN Govt School Teacher</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid mentor-img">
-                                <h1>Mr Saravanan</h1>
-                                <p>Accenture, Chennai</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
-                                <h1>Mr Yoga Balaji</h1>
-                                <p>MuSigma, Bangalore</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
-                                <h1>Ms RajaLakshmi</h1>
-                                <p>-------</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
-                                <h1>Mr Jijith Kumar</h1>
-                                <p>Senior Bailiff, Coimbatore</p>
-                            </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mentor-card">
-                                <img src="/images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
-                                <h1>Ms Shamyuktha</h1>
-                                <p>Titan, Hosur</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+
+<div class="container my-4">
+  <div class="card shadow">
+    <!-- title bar -->
+    <div class="card-header d-flex align-items-center">
+        <span class="badge bg-secondary me-2">3</span>
+        <h2 class="card-title mb-0">Payment Details</h2>
     </div>
 
-    
+    <div class="card-body">
+      <div class="row g-4">
+
+        <!-- QR column -->
+        <div class="col-12 col-md-5 text-center">
+          <img src="./images/payment_qr.jpg" alt="QR Code" class="qr-img">
+        </div>
+
+        <!-- text column -->
+        <div class="col-12 col-md-7">
+          <h5 class="fw-semibold mb-3">Contact for Help</h5>
+
+          <p class="mb-1">
+            <i class="bi bi-telephone-fill me-1"></i> +91&nbsp;123456678
+          </p>
+          <p>
+            <i class="bi bi-envelope-fill me-1"></i>
+            <a href="mailto:info@elarchitek@gmail.com">info@elarchitek@gmail.com</a>
+          </p>
+
+          <p>
+            Please ensure the receiver name is correct before proceeding.
+            Once you complete the payment, click <strong>"Yes"</strong> to
+            move forward. If you face any issues or need assistance, don’t
+            hesitate to reach out through the contact options provided.
+          </p>
+
+          <!-- buttons -->
+          <h5 class="fw-semibold mb-3">Have you completed the payment?</h5>
+
+          <div class="d-flex gap-3">
+            <button class="btn btn-primary btn-yes">Yes</button>
+            <button class="btn btn-dark   btn-no">No</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- receiver name -->
+      <div class="text-center mt-4">
+        <span class="receiver-label">Receiver Name&nbsp;:&nbsp;</span>
+        Elarchitek
+      </div>
+
+      <p class="text-center mt-2 help-note">
+        Thanks for supporting Elarchitek. Your help drives us forward.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS (optional, for components that need JS) -->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+<!-- (Optional) Bootstrap Icons CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+/>
 </body>
 </html>
