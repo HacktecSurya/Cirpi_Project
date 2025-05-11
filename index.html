@@ -79,22 +79,48 @@
                 <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
                 <input type="text" id="donorMobile" name="donorMobile" required>
 
-                <button type="submit" class="donate-submit-btn donate-btn">Proceed to Donate</button>
+                <button type="submit" class="donate-submit-btn donate-btn mt-5">Proceed to Donate</button>
+
+
             </form>
+            <button class="donate-btn D-exit" onclick="closePopup('popup_donate')">Close</button>
+            <!-- Donation Popup Content -->
+            <div id="qrSection" class="popup-container"
+                style="padding: 30px; max-width: 900px; margin: auto; display: none; ">
 
-            <div id="qrSection" style="display: none;">
-                <div class="intro-head">
-                    <h1 class="scan-txt">Scan to Donate</h1>
+
+                <div class="row g-4 justify-content-center align-items-center  rounded shadow-sm h-2000">
+                    <!-- Heading -->
+                    <div class="intro-head">
+                        <h1 class="">One Scan, Big Impact</h1>
+                    </div>
+                    <!-- QR Code Column -->
+                    <div class="col-md-5 text-center">
+                        <div class="bg-white p-4">
+                            <img src="./images/new-qr.png" alt="QR Code"
+                                style="max-width: 220px; width: 100%; height: auto;">
+                            <p class="mt-3 mb-0 text-muted"><strong>UPI ID:</strong> suryarish96-1@okaxis</p>
+                        </div>
+                    </div>
+
+                    <!-- Payment Details Column -->
+                    <div class="col-md-7">
+                        <div class="bg-white p-4">
+                            <h4 class="pay-head text-center mb-3">Payment Details</h4>
+                            <p><strong>Account Name:</strong> CIRPI Educational Foundation</p>
+                            <p><strong>Account Number:</strong> 1234567890</p>
+                            <p><strong>IFSC Code:</strong> ABCD1234</p>
+                            <p><strong>Bank Name:</strong> XYZ Bank</p>
+
+                            <div class="text-center mt-4">
+                                <p class="fw-semibold">Have you completed the payment?</p>
+                                <button class="donate-btn mr-5" onclick="closePopup('popup_donate')">Yes</button>
+                                <button class="donate-btn" onclick="closePopup('popup_donate')">No</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <img class="QR-img" src="./images/payment_qr.jpg" id="qrCode" alt="QR Code">
-                <p id="countdown"></p>
             </div>
-
-            <button class="donate-btn" onclick="closePopup('popup_donate')">Close</button>
-        </div>
-
-        <!-- <button class="donate-btn"><img src="/images/donate_btn.png" alt="donate button"></button> -->
-        <!-- <a href="#"><img src="images/donate-img.png" class="donate-btn" alt="donate button"></a> -->
     </nav>
 
     <!-- Hero Section -->
@@ -168,7 +194,7 @@
             <div class="intro-head">
                 <h1>Welcome to <span class="head">CIRPI Educational Foundation</span> </h1>
             </div>
-            <div class="col-xl-6 col-md-12 col-sm-12 ">
+            <div class="col-xl-7 col-md-12 col-sm-12  img-container">
 
                 <div class="intro-text ">
                     <p>
@@ -195,10 +221,44 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xl-6 col-md-12 col-sm-12  "> <img class="Intro-img"
-                    src="./images/intro-image.png" alt=""> </div>
+            <div class="col-xl-5 col-md-12 col-sm-12  img-container ">
+                <img class="Intro-img" src="./images/intro-image.png" alt="">
+            </div>
         </div>
     </div>
+
+    <!-- <main class="add-caro d-flex flex-row justify-content-center align-items-center">
+        <div class="logos overflow-hidden py-5 px-0 position-relative"
+            style="background-color: #fff; white-space: nowrap;">
+            <div class="logos-slide d-inline-block">
+
+                <img src="/images/num-1.webp" alt="num-1">
+
+                
+                <img class="caros-img" src="/images/num-2.webp" alt="num-2">
+                <img class="caros-img" src="/images/num-3.webp" alt="num-3">
+                <img class="caros-img" src="/images/num-4.webp" alt="num-4">
+                <img src="/images/num-5.webp" alt="num-5">
+                <img src="/images/num-6.webp" alt="num-6">
+                <img src="/images/num-7.webp" alt="num-7">
+                <img src="/images/num8.webp" alt="num-8">
+                <img src="/images/num-9.webp" alt="num-9">
+                <img src="/images/num-10.webp" alt="num-10">
+                               
+                <img src="/images/num-2.webp" alt="num-2">
+                <img src="/images/num-3.webp" alt="num-3">
+                <img src="/images/num-4.webp" alt="num-4">
+                <img src="/images/num-5.webp" alt="num-5">
+                <img src="/images/num-6.webp" alt="num-6">
+                <img src="/images/num-7.webp" alt="num-7">
+                <img src="/images/num8.webp" alt="num-8">
+                <img src="/images/num-9.webp" alt="num-9">
+                <img src="/images/num-10.webp" alt="num-10">
+               
+            </div>
+        </div>
+    </main> -->
+
     <div class="container-fluid section OG">
         <div class="row">
             <div class="OG-title">
@@ -366,13 +426,13 @@
     <div id="about-us" class="container-fluid section our-board">
         <div class="container">
             <div class="board-members">
-                <h1 class="board-head">Our Team</h1>
+                <h1 class="board-head">Our Board</h1>
             </div>
             <div class="row">
 
                 <!-- Mr. Raghul Vijayan -->
-                <div class="col-xl-4 col-md-12 col-sm-12  OBI-1 rahul-col">
-                    <img class="raghul-img rag-2" src="/images/raghul.png" alt="raghul">
+                <div class="col-xl-3 col-md-6 col-sm-12  OBI-1 rahul-col">
+                    <img class="raghul-img rag-2" src="./images/raghul.png" alt="raghul">
                     <h1>Mr Raghul Vijayan</h1>
                     <p>Cognizant,Chennai</p>
                     <button class="btn" onclick="openPopup('popup_raghul'); toggle();">Read More</button>
@@ -408,7 +468,7 @@
                 </div>
 
                 <!-- Mr. Gokul Kittusamy -->
-                <div class="col-xl-4 col-md-6 col-sm-12 gokul-col OBI-1">
+                <div class="col-xl-3 col-md-6 col-sm-12 gokul-col OBI-1">
                     <img class="gokul-img" src="./images/gokul-g.png" alt="gokul">
                     <h1>Mr Gokul Kittusamy</h1>
                     <p>Elerchitek CEO & MD, Chennai</p>
@@ -459,7 +519,7 @@
                 </div>
 
                 <!-- Ms. Kaviya -->
-                <div class="col-xl-4 col-md-6 col-sm-12 OBI-1 gokul-col">
+                <div class="col-xl-3 col-md-6 col-sm-12 OBI-1 gokul-col">
                     <img class="kaviya-img" src="/images/kaviya.png" alt="kaviya">
                     <h1>Ms Kaviya</h1>
                     <p>Varahe Analytics,Chennai</p>
@@ -496,47 +556,47 @@
                 </div>
 
                 <!-- Ms. Preethi -->
-                <!-- <div class="col-xl-3 col-md-6 col-sm-12 OBI-1">
-                        <img src="/images/raghul.png" alt="preethi">
+                <div class="col-xl-3 col-md-6 col-sm-12 OBI-1 gokul-col">
+                    <img src="./images/preethi-ad.png" alt="preethi">
+                    <h1>Ms Preethi</h1>
+                    <p>DELL , Bangalore</p>
+                    <button class="btn" onclick="openPopup('popup_preethi')">Read More</button>
+                    <div class="popup" id="popup_preethi">
+                        <img class="pop_img" src="./images/preethi-ad.png" alt="preethi">
                         <h1>Ms Preethi</h1>
-                        <p>DELL , Bangalore</p>
-                        <button class="btn" onclick="openPopup('popup_preethi')">Read More</button>
-                        <div class="popup" id="popup_preethi">
-                            <img class="pop_img" src="/images/raghul.png" alt="preethi">
-                            <h1>Ms Preethi</h1>
-                            <h3>Advisor</h3>
-                            <p>Preethi Damodharan is a highly skilled Software Engineer at Dell Technologies, where she
-                                plays a
-                                key role in developing cutting-edge technological solutions. With a strong foundation in
-                                software development and problem-solving, she has gained extensive experience in the
-                                tech
-                                industry, driving innovation and efficiency in her work.</p>
+                        <h3>Advisor</h3>
+                        <p>Preethi Damodharan is a highly skilled Software Engineer at Dell Technologies, where she
+                            plays a
+                            key role in developing cutting-edge technological solutions. With a strong foundation in
+                            software development and problem-solving, she has gained extensive experience in the
+                            tech
+                            industry, driving innovation and efficiency in her work.</p>
 
-                            <p>Beyond her professional achievements, Preethi is deeply committed to educational and
-                                social
-                                impact initiatives. As an Advisor and Mentor at Cirpi Educational Foundation, she plays
-                                a
-                                crucial role in shaping the foundation’s strategic direction. Her expertise in
-                                decision-making
-                                and long-term planning helps Cirpi navigate challenges and seize opportunities for
-                                growth.</p>
+                        <p>Beyond her professional achievements, Preethi is deeply committed to educational and
+                            social
+                            impact initiatives. As an Advisor and Mentor at Cirpi Educational Foundation, she plays
+                            a
+                            crucial role in shaping the foundation’s strategic direction. Her expertise in
+                            decision-making
+                            and long-term planning helps Cirpi navigate challenges and seize opportunities for
+                            growth.</p>
 
-                            <p>Preethi’s guidance and mentorship ensure that Cirpi stays true to its mission of
-                                empowering
-                                students by providing financial aid, skill development programs, and academic support.
-                                Her
-                                insights help in crafting effective educational strategies, ensuring that Cirpi remains
-                                a pillar
-                                of support for aspiring students.</p>
-                            <p>Her dedication to fostering innovation and learning makes her an invaluable asset to both
-                                Dell
-                                Technologies and Cirpi Educational Foundation, bridging the gap between technology and
-                                education
-                                to create a meaningful impact.</p>
+                        <p>Preethi’s guidance and mentorship ensure that Cirpi stays true to its mission of
+                            empowering
+                            students by providing financial aid, skill development programs, and academic support.
+                            Her
+                            insights help in crafting effective educational strategies, ensuring that Cirpi remains
+                            a pillar
+                            of support for aspiring students.</p>
+                        <p>Her dedication to fostering innovation and learning makes her an invaluable asset to both
+                            Dell
+                            Technologies and Cirpi Educational Foundation, bridging the gap between technology and
+                            education
+                            to create a meaningful impact.</p>
 
-                            <button class="btn" onclick="closePopup('popup_preethi')">Read Less</button>
-                        </div>
-                    </div> -->
+                        <button class="btn" onclick="closePopup('popup_preethi')">Read Less</button>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -544,7 +604,7 @@
 
     <div class="container-fluid section our-board">
         <div class="board-members">
-            <h1 class="mentor-head">Our Mentors</h1>
+            <h1 class="mentor-head">Our Team</h1>
         </div>
 
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
@@ -565,12 +625,13 @@
                                 <p>TN Govt School Teacher</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Srinivasan" class="img-fluid mentor-img">
+                                <img src="./images/srinivasasn-sir.png" alt="Mr Srinivasan"
+                                    class="img-fluid mentor-img">
                                 <h1>Mr Srinivasan</h1>
                                 <p>Lions Club, Tambaram</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Saravanan" class="img-fluid mentor-img">
+                                <img src="./images/saravanan-md.png" alt="Mr Saravanan" class="img-fluid mentor-img">
                                 <h1>Mr Saravanan</h1>
                                 <p>Accenture, Chennai</p>
                             </div>
@@ -587,12 +648,7 @@
                                 <h1>Mr Karthik</h1>
                                 <p>USA</p>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="./images/preethi.png" alt="Ms Preethi" class="img-fluid mentor-img">
-                                <h1>Ms Preethi</h1>
-                                <p>Dell Technologies, Bangalore</p>
-                            </div>
-                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                           <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/pooja.png" alt="Mr Ji" class="img-fluid mentor-img">
                                 <h1>MS Pooja</h1>
                                 <p>Head Bailiff, Coimbatore</p>
@@ -602,6 +658,12 @@
                                 <h1>Ms Shamyuktha</h1>
                                 <p>Titan TEAL, Hosur</p>
                             </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/raji.png" alt="Ms Preethi" class="img-fluid mentor-img">
+                                <h1>Ms RajaLakshmi</h1>
+                                <p>Accenture, Chennai</p>
+                            </div>
+
 
                         </div>
                     </div>
@@ -621,21 +683,78 @@
                                 <h1>Mr Amrish</h1>
                                 <p>Assen Technologies, Bangalore</p>
                             </div>
-                           
+
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <img src="./images/yoga.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
                                 <h1>Mr Yoga Balaji</h1>
                                 <p>MuSigma, Bangalore</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
-                                <img src="./images/rajalakshmi.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
-                                <h1>Ms RajaLakshmi</h1>
+                                <img src="./images/raji.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Ms Lekha</h1>
+                                <p> Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/govind.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                                <h1>Mr Govindha Raman</h1>
+                                <p>Head Software, Coimbatore</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/karthik.png" alt="Mr Amrish" class="img-fluid mentor-img">
+                                <h1>Mr Arivarasan</h1>
+                                <p>,Chennai</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr NaveenKumar Sakthivel</h1>
+                                <p>Cognizant,Chennai</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Mr Saravanan A </h1>
                                 <p>Accenture, Chennai</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Slide 5 -->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center text-center">
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/suriya.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
+                                <h1>Mr Jaya Suriya</h1>
+                                <p>HCL , Chennai</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/sample-logo.png" alt="Mr Amrish" class="img-fluid mentor-img">
+                                <h1>Mr Sathis Kumar</h1>
+                                <p>India Post</p>
+                            </div>
+
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="/images/sample-logo.png" alt="Mr Yoga Balaji" class="img-fluid mentor-img">
+                                <h1>Mr Sarathbawar</h1>
+                                <p>India Post</p>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
+                                <img src="./images/sample-logo.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
+                                <h1>Mr Navaneethan </h1>
+                                <p>Safty Engineer , Chennai</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
@@ -652,7 +771,6 @@
             </button>
         </div>
     </div>
-
 
     <div id="get-involved" class="container-fluid GI GI-contain">
         <div class="get-involved">
