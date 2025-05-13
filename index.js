@@ -1,6 +1,9 @@
 function openPopup(popupId) {
+    document.getElementById("donationForm").style.display = "block";
     const popup = document.getElementById(popupId);
     const blurOverlay = document.getElementById('blur-overlay');
+    // document.body.style.position = "fixed";
+    event.preventDefault();
 
     if (popup && blurOverlay) {
         popup.classList.add("open-popup");
@@ -13,6 +16,8 @@ function openPopup(popupId) {
 function closePopup(popupId) {
     const popup = document.getElementById(popupId);
     const blurOverlay = document.getElementById('blur-overlay');
+    // document.body.style.position = "static";
+    event.preventDefault();
 
     if (popup && blurOverlay) {
         popup.classList.remove("open-popup");
@@ -30,8 +35,12 @@ document.getElementById("donationForm").addEventListener("submit", function (eve
     const donorEmail = document.getElementById("donorEmail").value.trim();
     const donorMobile = document.getElementById("donorMobile").value.trim();
 
-    if (!donorName || !donorEmail || !donorMobile) {
+    if (!donorName || !donorEmail || !donorMobile ) {
         alert("Please fill in all fields before proceeding.");
+        return;
+    }
+    if(donorMobile.length != 10){
+        alert("Please enter a valid mobile number.");
         return;
     }
 
@@ -49,6 +58,7 @@ function storeDataInGoogleSheets(name, email, mobile) {
     })
     .then(() => {
         alert("Donation details submitted successfully!");
+        document.getElementById("donationForm").style.display = "none";
         showQRCode();
         resetForm();
     })
