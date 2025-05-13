@@ -100,7 +100,7 @@ html {
 }
 
 .hero {
-    background-image: url("/images/student_img.png") !important;
+    background-image: url("./images/student_img.png") !important;
     background-size: cover !important;
     background-position: center !important;
     color: rgba(0, 0, 0, 0.8) !important;
