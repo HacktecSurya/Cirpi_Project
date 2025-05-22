@@ -38,7 +38,7 @@
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><i class="fa-solid fa-bars humburger-menu-icon"></i></span>
             </button>
             <a href="#home" target="_blank">
                 <img src="./images/cirpi_logo.png" class="logo" alt="cirpi_logo">
@@ -121,7 +121,6 @@
 
         </div>
     </nav>
-
     <!-- Hero Section -->
     <div class="container-fluid section hero_section">
         <section class="hero  text-center ">
@@ -140,50 +139,6 @@
             </div>
         </section>
 
-        <!-- donate button -->
-        <div class="d-flex justify-content-center align-items-center pb-5" style="padding-bottom: 40px !important;">
-            <button class="fixed-donate-btn" onclick="openPopup('popup_donate')">
-                <i class="fas fa-hand-holding-heart"></i>
-                <span class="donate-text bold">DONATE</span>
-            </button>
-        </div>
-
-        <!-- Volunteer Button -->
-        <div class="d-flex justify-content-center align-items-center pt-5">
-            <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
-                <i class="fa-solid fa-users"></i>
-                <span class="volunteer-text bold">VOLUNTEER</span>
-            </div>
-        </div>
-
-        <!-- Volunteer Popup -->
-        <div class="popup" id="popup_volunteer">
-            <div class="intro-head">
-                <h1>Join as a Volunteer</h1>
-                <p>Fill in the details to become a part of CIRPI Educational Foundation.</p>
-            </div>
-
-            <div class="volunteer-container ">
-
-                <form class="volunteer-form">
-                    <label for="volunteer-name" class="volunteer-label">Name:</label>
-                    <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name"
-                        required>
-
-                    <label for="volunteer-email" class="volunteer-label">Email:</label>
-                    <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email"
-                        required>
-
-                    <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
-                    <input type="tel" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number"
-                        required>
-
-                    <button type="submit" class="volunteer-submit-btn donate-btn">Submit</button>
-                </form>
-            </div>
-
-            <button class="donate-btn" onclick="closePopup('popup_volunteer')">Close</button>
-        </div>
 
 
     </div>
@@ -257,7 +212,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3 pb-5">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="card custom-card shadow" id="card1">
                     <div class="card-body text-center">
                         <h5 class="card-title fw-bold text-dark">Leadership & Innovation</h5>
@@ -287,7 +242,7 @@
         </div>
     </div>
 
-    <div class="transprent_place section">
+    <div class="transprent_place section mt-4">
         <h1>Your Small Help Can Spark a <span class="tp-bright">Bright Future</span> </h1>
     </div>
 
@@ -336,10 +291,9 @@
 
                 <div class="col-xl-7 col-md-12 col-sm-12">
                     <h1>Empowering Dreams, Shaping Futures</h1>
-                    <p class="our-mission-text pr-5">At CIRPI Educational Foundation, we envision a future where no
+                    <p class="our-mission-text">At CIRPI Educational Foundation, we envision a future where no
                         student's
                         potential is limited by
-
                         their economic background.
                         Our mission goes beyond financial support—it focuses on creating self-sustaining,
                         future-ready
@@ -351,9 +305,9 @@
 
                     <div class="mission-list">
                         <p>● Financial aid for education.</p>
-                        <p>● Industry partnerships to bridge education and employment.</p>
-                        <p>● Mentorship programs for career guidance and personal growth.</p>
-                        <p>● Mentorship programs for career guidance and personal growth.</p>
+                        <p>●Industry partnerships to bridge education and employment.</p>
+                        <p>●Mentorship programs for career guidance and personal growth.</p>
+                        <p>●Mentorship programs for career guidance and personal growth.</p>
                     </div>
                 </div>
 
@@ -591,7 +545,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/pooja.png" alt="Mr Ji" class="img-fluid mentor-img">
                                 <h1>MS Pooja</h1>
-                                <p>Head Bailiff, Coimbatore</p>
+                                <p>Unwitta, Coimbatore</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/shamutha.png" alt="Ms Shamyuktha" class="img-fluid mentor-img">
@@ -621,7 +575,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/amrish.png" alt="Mr Amrish" class="img-fluid mentor-img">
                                 <h1>Mr Amrish</h1>
-                                <p>Assen Technologies, Bangalore</p>
+                                <p>Ericsson, Chennai</p>
                             </div>
 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
@@ -632,7 +586,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/lekha.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
                                 <h1>Ms Lekha</h1>
-                                <p> Chennai</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
@@ -645,12 +599,12 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/govind.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
                                 <h1>Mr Govindha Raman</h1>
-                                <p>Head Software, Coimbatore</p>
+                                <p>Software developer</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/karthik.png" alt="Mr Amrish" class="img-fluid mentor-img">
                                 <h1>Mr Arivarasan</h1>
-                                <p>,Chennai</p>
+                                <p>Science mentor</p>
                             </div>
 
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
@@ -674,7 +628,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/suriya.png" alt="Mr Jijith Kumar" class="img-fluid mentor-img">
                                 <h1>Mr Jaya Suriya</h1>
-                                <p>HCL , Chennai</p>
+                                <p>HCL, Chennai</p>
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/sample-logo.png" alt="Mr Amrish" class="img-fluid mentor-img">
@@ -690,7 +644,7 @@
                             <div class="col-lg-3 col-md-3 col-sm-6 col-6 mentor-card">
                                 <img src="./images/naveen.png" alt="Ms RajaLakshmi" class="img-fluid mentor-img">
                                 <h1>Mr Navaneethan </h1>
-                                <p>Safty Engineer , Chennai</p>
+                                <p>Safty Engineer, Chennai</p>
                             </div>
                         </div>
                     </div>
@@ -735,12 +689,58 @@
                     creates
                     learning
                     opportunities for students in need. Together, we can shape a brighter future and inspire the
-                    next <span class="GI-span-2">generation.</span></p>
+                    next generation.</p>
             </div>
         </div>
     </div>
 
-    <div id="blur-overlay"></div>
+    <div id="blur-overlay">
+              
+    </div>
+      <!-- donate button -->
+        <div class="d-flex justify-content-center align-items-center pb-5" style="padding-bottom: 40px !important;">
+            <button class="fixed-donate-btn" onclick="openPopup('popup_donate')">
+                <i class="fas fa-hand-holding-heart"></i>
+                <span class="donate-text bold">DONATE</span>
+            </button>
+        </div>
+
+        <!-- Volunteer Button -->
+        <div class="d-flex justify-content-center align-items-center pt-5">
+            <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
+                <i class="fa-solid fa-users"></i>
+                <span class="volunteer-text bold">VOLUNTEER</span>
+            </div>
+        </div>
+
+        <!-- Volunteer Popup -->
+        <div class="popup" id="popup_volunteer">
+            <div class="intro-head">
+                <h1>Join as a Volunteer</h1>
+                <p>Fill in the details to become a part of CIRPI Educational Foundation.</p>
+            </div>
+
+            <div class="volunteer-container ">
+
+                <form class="volunteer-form">
+                    <label for="volunteer-name" class="volunteer-label">Name:</label>
+                    <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name"
+                        required>
+
+                    <label for="volunteer-email" class="volunteer-label">Email:</label>
+                    <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email"
+                        required>
+
+                    <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
+                    <input type="tel" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number"
+                        required>
+
+                    <button type="submit" class="volunteer-submit-btn donate-btn">Submit</button>
+                </form>
+            </div>
+
+            <button class="donate-btn" onclick="closePopup('popup_volunteer')">Close</button>
+        </div>
 
     <div id="contact-us" class="container-fluid footer">
         <div class=" container">
@@ -755,21 +755,21 @@
                                 src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
                         <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
                     </div>
-
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-12 ">
                     <div class="contact-info">
                         <h1>Contact Us</h1>
-                        <p><i class="fas fa-map-marker-alt"></i> No 8, Raja Street, Salangapalayam, <br> Bhavani(TK),
+                        <p><i class="fas fa-map-marker-alt"></i>No 8, Raja Street, Salangapalayam, <br> Bhavani(TK),
                             Erode(Dt).</p>
-                        <p><i class="fas fa-phone-alt"></i> +91 88077 33343</p>
-                        <p><i class="fas fa-envelope"></i> info@cirpie.in</p>
+                        <p><i class="fas fa-phone-alt"></i>+91 88077 33343</p>
+                        <p><i class="fas fa-envelope"></i>info@cirpie.in</p>
                     </div>
                 </div>
             </div>
             <div class="tagline"># Empowering Knowledge, Transforming Tomorrow</div>
         </div>
     </div>
+    
 
 </body>
 

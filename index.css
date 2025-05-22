@@ -170,7 +170,8 @@ html {
 }
 
 .intro_container {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
+    margin-top: 5% !important;
 }
 
 .intro-head h1 {
@@ -477,8 +478,8 @@ html {
     font-weight: bold;
 }
 
-.OVR-contain {
-    text-align: center;
+.OVR-contain p{
+    text-align: justify !important;
 }
 
 .OV p {
@@ -497,20 +498,22 @@ html {
 .our-mission-text {
     color: #003257 !important;
     text-align: justify !important;
-    margin-left: 10%;
+    margin-left: 1%;
 }
 
 .OVM-contain h1 {
-    margin-left: 10%;
-    font-size: 24px;
+    /* margin-left: 10%; */
+    font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: #003257;
-    padding: 1%;
 }
 
 .OVM-contain h1 {
-    text-align: left !important;
+    font-size: 30px !important;
+    text-align: center !important;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .our-Mission h1 {
@@ -520,7 +523,7 @@ html {
 }
 
 .mission-list {
-    margin-left: 10%;
+    /* margin-left: 10%; */
     text-align: center !important;
     padding-top: 5%;
 }
@@ -633,13 +636,14 @@ html {
 }
 
 .transprent_place h1 {
-    color: #ffffff;
+    color: #e7f5fe;
     text-align: center;
     padding-top: 9%;
-    font-size: 40px;
+    font-size: 64px;
     font-weight:bolder;
     font-style: italic;
     font-family: 'Pacifico', cursive;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -1364,7 +1368,51 @@ input {
 
 }
 
+@media (max-width:1275px) {
+    .hero-sub-title{
+        font-size: 20px;
+    }
+            .transprent_place h1 {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        text-align: center;
+        font-size: 38px !important;
+        padding-top: 10%;
+    }
+        .Intro-img{
+        width: 100% !important;
+        height: 100% !important;
+        padding-right:5% !important;
+    }
+}
 
+@media (max-width:715px) {
+       .hero-sub-title{
+        font-size: 13px !important;
+    }
+}
+/* moto g32 */
+@media (max-width:519px) {
+     .hero-sub-title{
+        font-size: 12px !important;
+    }
+    .intro-text{
+        padding-left: 5% !important;
+    }
+    .Intro-img{
+        width: 100% !important;
+        height: 100% !important;
+        padding-right:5% !important;
+    }
+    .OV-img{
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .OVM-contain h1{
+        font-size: 34px !important;
+    }
+   
+}
 /* tablet view */
 
 @media (max-width:977px) {
@@ -1372,7 +1420,10 @@ input {
         background-color: #ffffff !important;
     }
     .navbar-toggler-icon{
-        background-color: black !important;
+        background: none !important
+    }
+    .humburger-menu-icon{
+        margin-top: 20% !important;
     }
     
 }
@@ -1520,7 +1571,7 @@ input {
     }
 
     .OVM-contain h1 {
-        font-size: 20px !important;
+        font-size: 24px !important;
     }
 
     .OVM-contain p {
@@ -1562,9 +1613,6 @@ input {
         padding-left: 20%;
     }
 
-    .GI-span-2 {
-        padding-left: 35%;
-    }
 
     .board-members h1 {
         font-size: 30px !important;
@@ -1630,6 +1678,28 @@ input {
     .Our-B h1 {
         font-size: 24px !important;
         padding-bottom: 12% !important;
+    }
+        .transprent_place h1 {
+        font-family: 'Dancing Script', cursive;
+        color: white;
+        text-align: center;
+        font-size: 38px !important;
+        padding-top: 10%;
+    }
+}
+
+@media (max-width:770px) {
+    .footer-logo{
+        margin-left: 10%;
+    }
+    .footer-logo-text{
+        margin-left: 20% !important;
+    }
+    .social-icons{
+        margin-left: 14% !important;
+    }
+    .contact-info{
+        margin-right: 3% !important;
     }
 }
 
@@ -1771,11 +1841,6 @@ input {
         text-align: center;
         font-size: 24px !important;
         padding: 1%;
-    }
-
-    .tp-bright {
-        color: #6bcfff;
-        font-family: 'Dancing Script', cursive;
     }
 
     .our-mission-text {
@@ -1928,9 +1993,7 @@ input {
         padding-left: 20%;
     }
 
-    .GI-span-2 {
-        padding-left: 35%;
-    }
+
 
     .footer-logo-text {
         font-size: 25px !important;
@@ -2145,9 +2208,6 @@ input {
         padding-left: 20%;
     }
 
-    .GI-span-2 {
-        padding-left: 35%;
-    }
 
     #popup_donate p {
         font-size: 19px !important;
@@ -2338,9 +2398,6 @@ input {
         padding-left: 20%;
     }
 
-    .GI-span-2 {
-        padding-left: 35%;
-    }
 
     .cart-title {
         font-size: 17px !important;
@@ -2450,28 +2507,3 @@ input {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-/* .QR-text {
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-}
-
-.payment-details p {
-    margin-bottom: 10px;
-    font-size: 1rem;
-}
-
-.donate-btn {
-    padding: 8px 20px;
-    font-weight: 500;
-    border-radius: 8px;
-} */
