@@ -4,157 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CIRPI Educational Foundation</title>
-
-    <!-- <script defer src="index.js"></script> -->
-    <link rel="stylesheet" href="nav.css">
-
-    <link rel="icon" href="./images/icon.png" type="image/x-icon">
-
-
+    <title>CIRPI Educational Foundation</title>
+    <!-- Bootstrap CSS -->
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Font Awesome (latest) -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <script defer src="index.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Your custom CSS -->
     <link rel="stylesheet" href="index.css">
-</head>
-
 
 </head>
 
-<body>
+<body id="home" style="overflow-x: hidden !important;">
     <!-- Navbar -->
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-
-        <!-- Brand Logo -->
-        <a class="navbar-brand" href="#home" target="_blank">
-            <img src="./images/cirpi_logo.png" class="logo" alt="cirpi_logo">
-        </a>
-
-        <!-- Toggler Button -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <i class="fa-solid fa-bars"></i>
-        </button>
-        <!-- Navbar Links -->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link first-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about-us">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#get-involved">Get Involved</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
-                <li class="nav-item">
-                    <button class="donate-btn" onclick="openPopup('popup_donate')">Donate</button>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <!-- Blur Overlay -->
-    <div id="blur-overlay" onclick="closePopup('popup_donate')"></div>
-
-    <!-- Donation Popup -->
-    <div class="popup" id="popup_donate">
-        <div class="intro-head text-center mb-3">
-            <h1 class="vol-head">Support CIRPI Educational Foundation</h1>
-            <p class="vol-head1">Your donation helps us provide educational resources and mentorship.</p>
-        </div>
-
-        <form class="donation-form" id="donationForm">
-            <label class="DF-name" for="donorName">Name:</label>
-            <input type="text" id="donorName" name="donorName" class="volunteer-input" placeholder="Enter your name" required>
-
-            <label class="DF-Email" for="donorEmail">Email:</label>
-            <input type="email" id="donorEmail" name="donorEmail" class="volunteer-input"  placeholder="Enter your Email" required >
-
-            <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
-            <input type="number" id="donorMobile" name="donorMobile" class="volunteer-input"  placeholder="Enter your Phone Number" required>
-
-            <button type="submit" class="donate-btn w-100 mb-3">Proceed to Donate</button>
-        </form>
-
-        <button class="donate-btn mb-3" onclick="closePopup('popup_donate')">Close</button>
-
-
-        <!-- QR Section -->
-        <div id="qrSection" style="display: none;">
-            <div class="rounded shadow-sm bg-white p-4">
-                <div class="text-center mb-4">
-                    <h1 class="fw-bold Qr-text" style="color: #001f42;">One Payment, Big Impact</h1>
-                </div>
-                <div class="text-start mb-4">
-                    <h4 class="fw-semibold text-center mb-3 Qr-text" style="color: #001f42;">Payment Details</h4>
-                    <p><strong>UPI ID:</strong> 8807733371@hdfcbank</p>
-                    <p><strong>Account Name:</strong> CIRPI EDUCATIONAL FOUNDATION</p>
-                    <p><strong>Account Number:</strong> 50200099529008</p>
-                    <p><strong>Branch:</strong> TIRUPATTUR</p>
-                    <p><strong>IFSC Code:</strong> HDFC0002053</p>
-                    <p><strong>Account Type:</strong> CURRENT</p>
-                    <p><strong>Bank Name:</strong> HDFC Bank</p>
-                </div>
-                <div class="text-center mt-4">
-                    <p class="fw-semibold text-center">Have you completed the payment?</p>
-                    <button class="donate-btn me-3 px-4 py-2" onclick="closePopup('popup_donate')">Yes</button>
-                    <button class="donate-btn px-4 py-2" onclick="closePopup('popup_donate')">No</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="popup" id="popup_volunteer">
-        <div class="intro-head">
-            <h1 class="vol-head">Join as a Volunteer</h1>
-            <p class="vol-head1">Fill in the details to become a part of CIRPI Educational Foundation.</p>
-        </div>
-
-        <div class="volunteer-container ">
-
-            <form class="volunteer-form">
-                <label for="volunteer-name" class="volunteer-label">Name:</label>
-                <input type="text" id="volunteer-name" class="volunteer-input" placeholder="Enter your name" required>
-
-                <label for="volunteer-email" class="volunteer-label">Email:</label>
-                <input type="email" id="volunteer-email" class="volunteer-input" placeholder="Enter your email"
-                    required>
-
-                <label for="volunteer-phone" class="volunteer-label">Phone Number:</label>
-                <input type="text" id="volunteer-phone" class="volunteer-input" placeholder="Enter your phone number"
-                    required>
-
-                <button type="submit" class="volunteer-submit-btn donate-btn">Submit</button>
-            </form>
-        </div>
-
-        <button class="donate-btn cancel-but" onclick="closePopup('popup_volunteer')">Close</button>
-    </div>
-
-    <!-- DOnate Button -->
-    <div class="d-flex justify-content-center align-items-center">
-        <button class="fixed-donate-btn" onclick="openPopup('popup_donate')">
-            <i class="fas fa-hand-holding-heart"></i>
-            <span class="donate-text bold">DONATE</span>
-        </button>
-    </div>
-
-    <!-- Volunteer Button -->
-    <div class="d-flex justify-content-center align-items-center">
-        <div class="volunteer-btn" onclick="openPopup('popup_volunteer')">
-            <i class="fa-solid fa-users"></i>
-            <span class="volunteer-text bold">VOLUNTEER</span>
-        </div>
-    </div>
+    <!-- <div id="header"></div> -->
 
 
 
+
+    <!-- Hero Section -->
     <div class="container-fluid section hero_section">
         <section class="hero  text-center ">
             <div class="hero_container">
@@ -176,13 +51,12 @@
 
     </div>
 
-
     <div class="container-fluid intro_container">
         <div class="row">
             <div class="intro-head">
                 <h1>Welcome to <span class="head">CIRPI Educational Foundation</span> </h1>
             </div>
-            <div class="col-xl-7 col-md-12 col-sm-12">
+            <div class="col-xl-7 col-md-12 col-sm-12  img-container">
 
                 <div class="intro-text">
                     <p>
@@ -209,8 +83,8 @@
                     </p>
                 </div>
             </div>
-            <div class="col-xl-5 col-md-12 col-sm-12">
-                <img class="Intro-img w-100" src="./images/intro-image.png" alt="">
+            <div class="col-xl-5 col-md-12 col-sm-12  img-container ">
+                <img class="Intro-img" src="./images/intro-image.png" alt="">
             </div>
         </div>
     </div>
@@ -316,6 +190,7 @@
     </div>
 
 
+
     <div class="container-fluid section OM">
 
         <div class="container-fluid OVM-contain">
@@ -406,9 +281,7 @@
                     <img class="gokul-img" src="./images/gokul-g.png" alt="gokul">
                     <h1>Mr Gokul Kittusamy</h1>
                     <p>Elerchitek CEO & MD, Chennai</p>
-                    <button class="btn d-flex justify-content-center align-items-center" onclick="openPopup('popup_gokul')">
-                        Read More
-                    </button>
+                    <button class="btn" onclick="openPopup('popup_gokul')">Read More</button>
                     <div class="popup" id="popup_gokul">
                         <img class="pop_img" src="./images/gokul-g.png" alt="gokul">
                         <h1>Mr Gokul Kittusamy</h1>
@@ -496,8 +369,7 @@
                     <img src="./images/preethi-ad.png" alt="preethi">
                     <h1>Ms Preethi</h1>
                     <p>DELL , Bangalore</p>
-                    <button class="btn d-flex justify-content-center" onclick="openPopup('popup_preethi')">Read
-                        More</button>
+                    <button class="btn" onclick="openPopup('popup_preethi')">Read More</button>
                     <div class="popup" id="popup_preethi">
                         <img class="pop_img" src="./images/preethi-ad.png" alt="preethi">
                         <h1>Ms Preethi</h1>
@@ -531,15 +403,13 @@
                             education
                             to create a meaningful impact.</p>
 
-                        <button class="btn justify-content-center" onclick="closePopup('popup_preethi')">Read
-                            Less</button>
+                        <button class="btn" onclick="closePopup('popup_preethi')">Read Less</button>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
-
 
     <div class="container-fluid section our-board">
         <div class="board-members">
@@ -711,7 +581,6 @@
         </div>
     </div>
 
-
     <div id="get-involved" class="container-fluid GI GI-contain">
         <div class="get-involved">
             <h1>Get Involved</h1>
@@ -774,10 +643,31 @@
             </div>
         </div>
     </div>
+    <script>
+        fetch("nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+
+    </script>
+
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your custom JS -->
+    <script src="index.js"></script>
+
+
 
 
 
 </body>
-
 
 </html>
