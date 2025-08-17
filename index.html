@@ -4,12 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>CIRPI Educational Foundation</title>
+    <title>Responsive Navbar</title>
 
     <!-- <script defer src="index.js"></script> -->
     <link rel="stylesheet" href="nav.css">
-
-    <link rel="icon" href="./images/icon.png" type="image/x-icon">
 
 
     <!-- Bootstrap CSS -->
@@ -22,7 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <script defer src="index.js"></script>
+
     <link rel="stylesheet" href="index.css">
+
 </head>
 
 
@@ -69,13 +69,16 @@
 
         <form class="donation-form" id="donationForm">
             <label class="DF-name" for="donorName">Name:</label>
-            <input type="text" id="donorName" name="donorName" class="volunteer-input" placeholder="Enter your name" required>
+            <input type="text" id="donorName" name="donorName" class="volunteer-input" placeholder="Enter your name"
+                required>
 
             <label class="DF-Email" for="donorEmail">Email:</label>
-            <input type="email" id="donorEmail" name="donorEmail" class="volunteer-input"  placeholder="Enter your Email" required >
+            <input type="email" id="donorEmail" name="donorEmail" class="volunteer-input" placeholder="Enter your Email"
+                required>
 
             <label class="DF-Mobile" for="donorMobile">Mobile Number:</label>
-            <input type="number" id="donorMobile" name="donorMobile" class="volunteer-input"  placeholder="Enter your Phone Number" required>
+            <input type="number" id="donorMobile" name="donorMobile" class="volunteer-input"
+                placeholder="Enter your Phone Number" required>
 
             <button type="submit" class="donate-btn w-100 mb-3">Proceed to Donate</button>
         </form>
@@ -357,12 +360,12 @@
 
     </div>
 
-    <div id="about-us" class="container-fluid section our-board">
+    <div id="about-us" class="container-fluid section ">
         <div class="container">
             <div class="board-members">
                 <h1 class="board-head">Our Board</h1>
             </div>
-            <div class="row">
+            <div class="row our-board">
 
                 <!-- Mr. Raghul Vijayan -->
                 <div class="col-xl-3 col-md-6 col-sm-12  OBI-1 rahul-col">
@@ -406,7 +409,8 @@
                     <img class="gokul-img" src="./images/gokul-g.png" alt="gokul">
                     <h1>Mr Gokul Kittusamy</h1>
                     <p>Elerchitek CEO & MD, Chennai</p>
-                    <button class="btn d-flex justify-content-center align-items-center" onclick="openPopup('popup_gokul')">
+                    <button class="btn d-flex justify-content-center align-items-center"
+                        onclick="openPopup('popup_gokul')">
                         Read More
                     </button>
                     <div class="popup" id="popup_gokul">
@@ -541,12 +545,13 @@
     </div>
 
 
-    <div class="container-fluid section our-board">
+    <div class="container-fluid section ">
         <div class="board-members">
             <h1 class="mentor-head">Our Team</h1>
         </div>
 
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carouselExampleControls" class="carousel slide our-board" data-bs-ride="carousel"
+            data-bs-interval="3000">
             <div class="carousel-inner">
 
                 <!-- Slide 1 -->
@@ -717,7 +722,7 @@
             <h1>Get Involved</h1>
         </div>
         <div class="row">
-            <div class="col-6 vol-col text-center">
+            <div class="col-md-6 col-12 vol-col text-center">
                 <img class="support_img" src="./images/volunteer.png" alt="volunteer_img">
                 <h2 class="GI-head">Volunteer With Us</h2>
                 <p class="GI-text">Offer your skills and time to mentor students or contribute to educational
@@ -728,7 +733,7 @@
                         personal growth</span></p>
             </div>
 
-            <div class="col-6 text-center">
+            <div class="col-md-6 col-12 text-center">
                 <img class="support_img" src="./images/support.png" alt="support_img">
                 <h2 class="GI-head">Support With Us</h2>
                 <p class="GI-text">Make a difference today by contributing to education programs. Your support
@@ -749,10 +754,17 @@
                     <img class="footer-logo" src="images/cirpi_logo.png" alt="Cirpi Logo">
                     <div class="footer-logo-text text-center">Educational Foundation</div>
                     <div class="social-icons justify-content-center ">
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-                        <a href="https://www.instagram.com/cirpi_edu?utm_source=qr&igsh=OWc0bDFjNHY1enJq"><img
-                                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-                        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                        <!-- Facebook -->
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/cirpi_edu?utm_source=qr&igsh=OWc0bDFjNHY1enJq"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <!-- LinkedIn -->
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+
                     </div>
                 </div>
 
