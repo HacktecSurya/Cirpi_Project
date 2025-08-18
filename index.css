@@ -149,11 +149,11 @@
 }
 
 .og-container p {
-    color: #003257;
+    color: #003257 !important;
 }
 
-.og-container h5 {
-    color: #003257;
+.og-container h5  {
+    color: #003257 !important ;
 }
 
 .OG-contain {
@@ -281,7 +281,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 60%;
     height: 100%;
 }
 
@@ -301,7 +301,7 @@
 
 .arrow-bullet li {
     list-style: none;
-    padding-left: 3%;
+    padding-left: 5%;
     position: relative;
     margin-bottom: 8px;
     font-size: 18px;
@@ -448,7 +448,7 @@
 }
 
 .footer-logo {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
     margin-left: 20%;
 }
@@ -533,15 +533,15 @@
     .card {
         max-width: 600px;
     }
-    
+
     .card-title {
         font-size: 24px;
     }
-    
+
     .card-text {
         font-size: 18px;
     }
-    
+
     .Intro-img {
         width: 60%;
         max-width: 500px;
@@ -553,15 +553,15 @@
     .card {
         max-width: 380px;
     }
-    
+
     .card-title {
         font-size: 22px;
     }
-    
+
     .card-text {
         font-size: 17px;
     }
-    
+
     .Intro-img {
         width: 65%;
         max-width: 450px;
@@ -573,6 +573,7 @@
     .card {
         max-width: 100%;
     }
+
     .hero {
         padding: 3%;
     }
@@ -606,20 +607,20 @@
         margin-bottom: 20px;
         max-width: 100%;
     }
-    
+
     .card-body {
         padding: 20px 15px;
     }
-    
+
     .card-title {
         font-size: 20px;
         margin-bottom: 15px;
     }
-    
+
     .card-text {
         font-size: 15px;
     }
-    
+
     .card-img-top {
         height: 180px;
     }
@@ -672,7 +673,7 @@
     .arrow-bullet li {
         font-size: 16px;
         margin-bottom: 6px;
-        padding-left: 2%;
+        padding-left: 5%;
     }
 
     .OM p {
@@ -705,7 +706,7 @@
     }
 
     .OBI-1 img {
-        max-width: 150px;
+        max-width: 200px;
         height: auto;
     }
 
@@ -779,6 +780,14 @@
     .tagline {
         font-size: 18px;
         margin-top: 15px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .mentor-card{
+        max-width: 190px !important;
+        height: auto;
     }
 }
 
@@ -867,7 +876,7 @@
     .arrow-bullet li {
         font-size: 14px;
         margin-bottom: 4px;
-        padding-left: 1%;
+        padding-left: 7%;
     }
 
     .OM p {
@@ -1046,7 +1055,7 @@
 
     .arrow-bullet li {
         margin-bottom: 6px;
-        padding-left: 2%;
+        /* padding-left: 2%; */
     }
 
     .board-members {
@@ -1096,7 +1105,7 @@
     }
 
     .footer-logo {
-        margin-left: 10%;
+        margin-left: 20%;
     }
 
     .footer-logo-text {
@@ -1131,6 +1140,69 @@
     .tagline {
         margin-top: 18px;
     }
+}
+
+@media (max-width: 991px) {
+    .footer-logo {
+        margin-left: 10%;
+    }
+
+    .footer-logo-text {
+        font-size: 26px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-logo {
+
+        max-width: 180px;
+        margin-left: 10%;
+    }
+
+    .footer-logo-text {
+        font-size: 18px !important;
+        margin-top: 12px;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .footer-logo {
+        max-width: 250px;
+        margin-left: 25%;
+    }
+
+    .footer-logo-text {
+        font-size: 24px !important;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-logo {
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-logo {
+        margin-left: 20%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 343px) {
+    .footer-logo-text {
+        font-size: 20px !important;
+        margin-top: 12px;
+    }
+
+    .footer-logo {
+        margin-left: 15%;
+        max-width: 200px;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -1295,16 +1367,16 @@
         text-align: center !important;
     }
 
-    .footer-logo {
-        margin-top: 10px;
-        max-width: 150px;
-        margin-bottom: 10px;
+    .footer-logo-text {
+        font-size: 20px !important;
+        margin-top: 12px;
     }
 
-    .footer-logo-text {
-        font-size: 20px;
-        margin-top: 5px;
+    .footer-logo {
+        margin-left: 10%;
+        max-width: 200px;
     }
+
 
     .social-icons {
         margin-top: 8px;
@@ -1338,5 +1410,26 @@
     .tagline {
         font-size: 14px;
         margin-top: 8px;
+    }
+}
+
+@media (max-width: 283px) {
+    .footer-logo-text {
+        font-size: 18px !important;
+        margin-top: 2px;
+    }
+    .footer-logo {
+        margin-left: 10%;
+        max-width: 180px;
+    }
+}
+@media (max-width: 258px) {
+    .footer-logo-text {
+        font-size: 16px !important;
+        margin-top: 2px;
+    }
+    .footer-logo {
+        margin-left: 10%;
+        max-width: 180px;
     }
 }
