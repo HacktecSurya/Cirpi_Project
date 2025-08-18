@@ -89,7 +89,9 @@
     flex-direction: column;
     height: 100%;
 }
-
+.mentor-card p{
+    color: #001f42;
+}
 .card-title {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -567,6 +569,7 @@
         max-width: 450px;
     }
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

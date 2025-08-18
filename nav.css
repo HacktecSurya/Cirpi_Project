@@ -279,6 +279,7 @@ input {
     }
 }
 
+
 /* Tablets */
 @media (max-width: 991px) {
     .navbar-nav {
@@ -299,6 +300,8 @@ input {
 
     .donate-btn {
         margin-bottom: 10px;
+         margin-left: 15px;
+
     }
 
     .navbar-toggler {
