@@ -190,7 +190,7 @@
 
 .transprent_place {
     /* padding: 10%; */
-    background-image: url("./images/bg-img.jpg");
+    background-image: url("./images/student_img-bg-1.png");
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -199,7 +199,7 @@
 }
 
 .transprent_place h1 {
-    color: #e7f5fe;
+    color: #001f42;
     text-align: center;
     padding-top: 9%;
     font-size: 64px;
@@ -557,6 +557,10 @@
     max-height: 80vh !important;
     overflow-y: auto !important;
     display: none !important;
+}
+.cin-number{
+    font-size: 18px !important;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Desktop and Large Laptop Views */
@@ -1199,11 +1203,13 @@
         max-width: 180px;
         margin-left: 10%;
     }
-
     .footer-logo-text {
         font-size: 18px !important;
         margin-top: 12px;
     }
+    .cin-number {
+    font-size: 14px !important;
+}
 }
 
 
@@ -1217,6 +1223,9 @@
         font-size: 24px !important;
         margin-top: 12px;
     }
+        .cin-number {
+    font-size: 14px !important;
+}
 }
 
 @media (max-width: 500px) {
